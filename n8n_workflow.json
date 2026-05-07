@@ -1,0 +1,190 @@
+{
+  "name": "Tekla -> Macro Allied (HTTP a Python)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 5
+            }
+          ]
+        }
+      },
+      "id": "11111111-1111-1111-1111-111111111111",
+      "name": "Cada 5 minutos",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        240,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://python-runner:5000/run",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "22222222-2222-2222-2222-222222222222",
+      "name": "Llamar Script Python",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        460,
+        300
+      ],
+      "notes": "Llama al servicio Python via HTTP. Devuelve JSON con status, output_file, files_processed, etc."
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "cond-1",
+              "leftValue": "={{ $json.status }}",
+              "rightValue": "success",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            },
+            {
+              "id": "cond-2",
+              "leftValue": "={{ $json.status }}",
+              "rightValue": "partial_success",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "options": {}
+      },
+      "id": "33333333-3333-3333-3333-333333333333",
+      "name": "Hubo archivos procesados?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        680,
+        300
+      ],
+      "notes": "Solo continua si el status indica que se proceso al menos un archivo correctamente."
+    },
+    {
+      "parameters": {
+        "fileSelector": "={{ $json.output_file }}",
+        "options": {}
+      },
+      "id": "44444444-4444-4444-4444-444444444444",
+      "name": "Leer Archivo Generado",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [
+        900,
+        200
+      ],
+      "notes": "Lee el .xlsx generado por el script para adjuntarlo al email."
+    },
+    {
+      "parameters": {
+        "fromEmail": "automation@allied.com",
+        "toEmail": "team@allied.com",
+        "subject": "=Macro Allied generada - Job {{ $('Llamar Script Python').item.json.job_number }}",
+        "emailFormat": "text",
+        "text": "=Se proceso correctamente el shipper desde Tekla.\n\nJob:                 {{ $('Llamar Script Python').item.json.job_number }}\nArchivos procesados: {{ $('Llamar Script Python').item.json.files_processed }}\nDuracion:            {{ $('Llamar Script Python').item.json.duration_seconds }}s\nErrores:             {{ $('Llamar Script Python').item.json.files_with_errors.length }}\n\nLog del procesamiento:\n{{ $('Llamar Script Python').item.json.log_entries.join('\\n') }}\n\nSe adjunta el archivo generado.",
+        "options": {
+          "attachmentsUi": {
+            "attachmentsBinary": [
+              {
+                "property": "data"
+              }
+            ]
+          }
+        }
+      },
+      "id": "55555555-5555-5555-5555-555555555555",
+      "name": "Enviar Email al Equipo",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        1120,
+        200
+      ],
+      "credentials": {
+        "smtp": {
+          "id": "REEMPLAZAR_CON_ID_DE_TUS_CREDENCIALES_SMTP",
+          "name": "SMTP Allied"
+        }
+      },
+      "notes": "Configurar credenciales SMTP en N8N antes de activar el workflow."
+    }
+  ],
+  "connections": {
+    "Cada 5 minutos": {
+      "main": [
+        [
+          {
+            "node": "Llamar Script Python",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Llamar Script Python": {
+      "main": [
+        [
+          {
+            "node": "Hubo archivos procesados?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Hubo archivos procesados?": {
+      "main": [
+        [
+          {
+            "node": "Leer Archivo Generado",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "Leer Archivo Generado": {
+      "main": [
+        [
+          {
+            "node": "Enviar Email al Equipo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "2",
+  "meta": {
+    "instanceId": "tekla-allied-v2"
+  },
+  "id": "tekla-allied-workflow-v2",
+  "tags": []
+}

@@ -1,0 +1,44 @@
+services:
+
+  # ─── Servicio 1: N8N (sin modificar, imagen oficial vanilla) ───
+  n8n:
+    image: docker.n8n.io/n8nio/n8n:latest
+    container_name: n8n-tekla
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_HOST=localhost
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - WEBHOOK_URL=http://localhost:5678/
+      - GENERIC_TIMEZONE=America/Bogota
+      - TZ=America/Bogota
+    volumes:
+      - n8n_data:/home/node/.n8n
+      # N8N necesita poder leer el archivo generado para adjuntarlo al email
+      - ./data/output:/data/output:ro
+    depends_on:
+      python-runner:
+        condition: service_healthy
+
+  # ─── Servicio 2: Python Runner (procesa los Excel) ───
+  python-runner:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: python-runner
+    restart: unless-stopped
+    environment:
+      # Variables que usa tekla_to_allied.py (rutas DENTRO del contenedor)
+      - TEKLA_FOLDER=/data/tekla
+      - MACRO_PATH=/data/macro/Allied_Macro.xlsx
+      - OUTPUT_FOLDER=/data/output
+    volumes:
+      - ./scripts:/scripts:ro          # scripts: server.py + tekla_to_allied.py
+      - ./data/tekla:/data/tekla       # entrada
+      - ./data/macro:/data/macro       # macro Allied
+      - ./data/output:/data/output     # salida
+
+volumes:
+  n8n_data:
