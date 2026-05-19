@@ -1,5 +1,5 @@
 {
-  "name": "Tekla -> Macro Allied (HTTP a Python)",
+  "name": "Tekla -> Macro Allied (.xls host)",
   "nodes": [
     {
       "parameters": {
@@ -24,20 +24,20 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://python-runner:5000/run",
+        "url": "http://host.docker.internal:5055/run",
         "options": {
           "timeout": 300000
         }
       },
       "id": "22222222-2222-2222-2222-222222222222",
-      "name": "Llamar Script Python",
+      "name": "Llamar Flujo XLS Host",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
         460,
         300
       ],
-      "notes": "Llama al servicio Python via HTTP. Devuelve JSON con status, output_file, files_processed, etc."
+      "notes": "Llama al servidor host .xls via HTTP. El host usa Docker para leer Tekla y Excel COM/PowerShell para escribir el .xls real."
     },
     {
       "parameters": {
@@ -94,15 +94,15 @@
         900,
         200
       ],
-      "notes": "Lee el .xlsx generado por el script para adjuntarlo al email."
+      "notes": "Lee el .xls generado en /data/output para adjuntarlo al email."
     },
     {
       "parameters": {
         "fromEmail": "automation@allied.com",
         "toEmail": "team@allied.com",
-        "subject": "=Macro Allied generada - Job {{ $('Llamar Script Python').item.json.job_number }}",
+        "subject": "=Macro Allied generada - Job {{ $('Llamar Flujo XLS Host').item.json.job_number }}",
         "emailFormat": "text",
-        "text": "=Se proceso correctamente el shipper desde Tekla.\n\nJob:                 {{ $('Llamar Script Python').item.json.job_number }}\nArchivos procesados: {{ $('Llamar Script Python').item.json.files_processed }}\nDuracion:            {{ $('Llamar Script Python').item.json.duration_seconds }}s\nErrores:             {{ $('Llamar Script Python').item.json.files_with_errors.length }}\n\nLog del procesamiento:\n{{ $('Llamar Script Python').item.json.log_entries.join('\\n') }}\n\nSe adjunta el archivo generado.",
+        "text": "=Se proceso correctamente el shipper desde Tekla.\n\nJob:                 {{ $('Llamar Flujo XLS Host').item.json.job_number }}\nArchivos procesados: {{ $('Llamar Flujo XLS Host').item.json.files_processed }}\nDuracion:            {{ $('Llamar Flujo XLS Host').item.json.duration_seconds }}s\nErrores:             {{ $('Llamar Flujo XLS Host').item.json.files_with_errors.length }}\n\nLog del procesamiento:\n{{ $('Llamar Flujo XLS Host').item.json.log_entries.join('\\n') }}\n\nSe adjunta el archivo generado.",
         "options": {
           "attachmentsUi": {
             "attachmentsBinary": [
@@ -135,14 +135,14 @@
       "main": [
         [
           {
-            "node": "Llamar Script Python",
+            "node": "Llamar Flujo XLS Host",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Llamar Script Python": {
+    "Llamar Flujo XLS Host": {
       "main": [
         [
           {

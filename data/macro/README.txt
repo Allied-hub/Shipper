@@ -1,4 +1,7 @@
 # Carpeta donde debe ir la macro Allied
 #
-# Pone aqui el archivo: Allied_Macro.xlsm
-# (El nombre exacto debe coincidir con la variable MACRO_PATH del docker-compose.yml)
+# Pone aqui el archivo original .xls:
+# Allied_Macro_original.xls
+#
+# Este flujo escribe el .xls con Excel COM/PowerShell
+ desde el host.

@@ -1,0 +1,470 @@
+
+ <HTML xmlns:v="urn:schemas-microsoft-com:vml" xmlns:x="urn:schemas-microsoft-com:office:excel">
+
+
+
+  <HEAD>
+      <STYLE>
+          .tpled1
+          {
+           font-style:  regular          ;  border-top:       .5pt solid silver  ;  background: none    ;
+           font-weight: bold             ;  border-bottom:    .5pt solid silver  ;
+           text-align:  center           ;  border-left:      .5pt solid silver  ;
+           color:       black            ;  border-right:     .5pt solid silver  ;
+           font-family: Arial            ;
+          }
+
+          .tpled2
+          {
+           font-style:  regular          ;  border-top:       .5pt solid black   ;  background: none    ;
+           font-weight: bold             ;  border-bottom:    .5pt solid black   ;
+           text-align:  left             ;  border-left:      .5pt solid black   ;
+           color:       black            ;  border-right:     .5pt solid black   ;
+           font-family: Arial            ;
+          }
+
+         .tpled3
+         {
+          font-style:  regular          ;  border-top:       .5pt solid black   ;  background: none    ;
+          font-weight: regular          ;  border-bottom:    .5pt solid black   ;
+          text-align:  center           ;  border-left:      .5pt solid black   ;
+          color:       red              ;  border-right:     .5pt solid black   ;
+          font-family: Arial            ;
+         }
+
+         .tpled4
+         {
+          font-style:  regular          ;  border-top:       .5pt solid silver  ;  background: none    ;
+          font-weight: regular          ;  border-bottom:    .5pt solid silver  ;
+          text-align:  center           ;  border-left:      .5pt solid silver  ;
+          color:       black            ;  border-right:     .5pt solid silver  ;
+          font-family: Arial            ;
+         }
+       </STYLE>
+
+  </HEAD>
+
+
+  <BODY>
+      <TABLE x:str >
+          <COL style ='width: 120'>
+          <COL style ='width: 150'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 200'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+
+
+          <TR>
+
+             <TD rowspan=6 colspan=6     class=tpled3>       </TD>
+
+             <TD colspan=2 class=tpled2 >                </TD>
+             <TD colspan=2 class=tpled2 > SHIPPER NUMBER </TD>
+             <TD colspan=2 class=tpled2 >                </TD>
+             <TD           class=tpled2 > OF             </TD>
+             <TD           class=tpled2 >                </TD>
+          </TR>
+
+
+
+
+
+
+
+         <TR>
+            <TD colspan=2 class=tpled2       >  JOB NUMBER           </TD>
+            <TD colspan=2 class=tpled2 x:num >  403174               </TD>
+            <TD colspan=2 class=tpled2       >  ISSUE DATE           </TD>
+            <TD colspan=2 class=tpled2       >                       </TD>
+         </TR>
+
+
+
+
+
+
+
+
+          <TR>
+             <TD  colspan=2 class=tpled2      > BUILDING NUMBER </TD>
+             <TD  colspan=2 class=tpled2      > 403174 - GLEN OAKS CLUB MSS    </TD>
+             <TD  colspan=2 class=tpled2      > REVISION NUMBER </TD>
+             <TD  colspan=2 class=tpled2      >                 </TD>
+          </TR>
+
+
+
+
+
+           <TR>
+              <TD colspan= 2 class=tpled2  >  DRAWN BY       </TD>
+              <TD colspan= 2 class=tpled2  >                 </TD>
+              <TD colspan= 2 class=tpled2  >  REVISION BY    </TD>
+              <TD colspan= 2 class=tpled2  >                 </TD>
+           </TR>
+
+
+          <TR>
+             <TD colspan= 2 class=tpled2  >  CHECKED BY     </TD>
+             <TD colspan= 2 class=tpled2  >                 </TD>
+             <TD colspan= 2 class=tpled2  >  REVISION DATE  </TD>
+             <TD colspan= 2 class=tpled2  >                 </TD>
+          </TR>
+
+
+         <TR>
+             <TD colspan=2  class=tpled2 >  BLDG DESCRIP.                                              </TD>
+             <TD colspan=6  class=tpled2 > GLEN OAKS CLUB                                              </TD>
+          </TR>
+
+
+
+            <TR>
+               <TD colspan=2  class=tpled2      >  CUSTOMER:                      </TD>
+               <TD colspan=12 class=tpled2      > MODERN STEEL SOLUTIONS          </TD>
+            </TR>
+
+
+
+           <TR>
+              <TD colspan=14 class=tpled1      > MISCELLANEOUS COLD FORM         </TD>
+           </TR>
+
+
+
+          <TR>
+             <TD            class=tpled1      >  QTY            </TD>
+
+
+             <TD            class=tpled1      >  MARK           </TD>
+             <TD colspan=3  class=tpled1      >  DESCRIPTION    </TD>
+             <TD            class=tpled1      >  PART           </TD>
+
+             <TD            class=tpled1      >  DWG #          </TD>
+
+             <TD colspan=2  class=tpled1      >  COLOR          </TD>
+
+             <TD colspan=3  class=tpled1      >  LENGTH         </TD>
+             <TD colspan=2  class=tpled1      >  WT.            </TD>
+
+          </TR>
+
+          <TR>
+
+          </TR>
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  4                      </TD>
+
+                <TD           class=tpled4       >  134GH1                 </TD>
+                <TD colspan=3 class=tpled4       >  C_WRAP_CHANNEL                    </TD>
+
+                <TD           class=tpled4       >  8X2CH16                </TD>
+
+                <TD           class=tpled4       >  0                      </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=3 class=tpled4 x:num >  5'-7 11/16"   "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  53.39                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134SA1                 </TD>
+                <TD colspan=3 class=tpled4       >  SHEETING_ANGLE                    </TD>
+
+                <TD           class=tpled4       >  L2X4X16GA              </TD>
+
+                <TD           class=tpled4       >  0                      </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=3 class=tpled4 x:num >  13'-11 5/16"  "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  35.50                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  5                      </TD>
+
+                <TD           class=tpled4       >  134SA2                 </TD>
+                <TD colspan=3 class=tpled4       >  SHEETING_ANGLE                    </TD>
+
+                <TD           class=tpled4       >  L2X4X16GA              </TD>
+
+                <TD           class=tpled4       >  0                      </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=3 class=tpled4 x:num >  11'-11 3/4"   "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  76.25                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  14                     </TD>
+
+                <TD           class=tpled4       >  134SA3                 </TD>
+                <TD colspan=3 class=tpled4       >  SHEETING_ANGLE                    </TD>
+
+                <TD           class=tpled4       >  L2X4X16GA              </TD>
+
+                <TD           class=tpled4       >  0                      </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=3 class=tpled4 x:num >  19'-5 11/16"  "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  347.06                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  4                      </TD>
+
+                <TD           class=tpled4       >  134SA4                 </TD>
+                <TD colspan=3 class=tpled4       >  SHEETING_ANGLE                    </TD>
+
+                <TD           class=tpled4       >  L2X4X16GA              </TD>
+
+                <TD           class=tpled4       >  0                      </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=3 class=tpled4 x:num >  0'-10"        "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  4.24                   </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134SA5                 </TD>
+                <TD colspan=3 class=tpled4       >  SHEETING_ANGLE                    </TD>
+
+                <TD           class=tpled4       >  L2X4X16GA-L            </TD>
+
+                <TD           class=tpled4       >  0                      </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=3 class=tpled4 x:num >  113'-9 7/8"   "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  289.78                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134SA6                 </TD>
+                <TD colspan=3 class=tpled4       >  SHEETING_ANGLE                    </TD>
+
+                <TD           class=tpled4       >  L8X4X16GA              </TD>
+
+                <TD           class=tpled4       >  0                      </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=3 class=tpled4 x:num >  13'-11 5/16"  "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  73.36                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134SA7                 </TD>
+                <TD colspan=3 class=tpled4       >  SHEETING_ANGLE                    </TD>
+
+                <TD           class=tpled4       >  L2X4X16GA              </TD>
+
+                <TD           class=tpled4       >  0                      </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=3 class=tpled4 x:num >  5'-5 1/8"     "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  13.82                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134SA8                 </TD>
+                <TD colspan=3 class=tpled4       >  SHEETING_ANGLE                    </TD>
+
+                <TD           class=tpled4       >  L2X4X16GA              </TD>
+
+                <TD           class=tpled4       >  0                      </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=3 class=tpled4 x:num >  5'-7"         "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  14.22                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134SA9                 </TD>
+                <TD colspan=3 class=tpled4       >  SHEETING_ANGLE                    </TD>
+
+                <TD           class=tpled4       >  L2X4X16GA              </TD>
+
+                <TD           class=tpled4       >  0                      </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=3 class=tpled4 x:num >  3'-0 13/16"   "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  7.82                   </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  134SA10                </TD>
+                <TD colspan=3 class=tpled4       >  SHEETING_ANGLE                    </TD>
+
+                <TD           class=tpled4       >  L2X4X16GA              </TD>
+
+                <TD           class=tpled4       >  0                      </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=3 class=tpled4 x:num >  5'-2 13/16"   "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  6.66                   </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  134SA_EXT1             </TD>
+                <TD colspan=3 class=tpled4       >  SA_EXT_SEC                        </TD>
+
+                <TD           class=tpled4       >  L2X4X16GA              </TD>
+
+                <TD           class=tpled4       >  0                      </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=3 class=tpled4 x:num >  20'-0"        "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  25.46                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  134SA_EXT2             </TD>
+                <TD colspan=3 class=tpled4       >  SA_EXT_SEC                        </TD>
+
+                <TD           class=tpled4       >  L8X4X16GA              </TD>
+
+                <TD           class=tpled4       >  0                      </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=3 class=tpled4 x:num >  20'-0"        "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  52.63                  </TD>
+
+            </TR>
+
+
+
+
+
+
+                  <TR>
+                  </TR>
+
+                  <TR>
+                      <TD colspan= 10 class=tpled1     >                                 </TD>
+                      <TD colspan=2  class=tpled2      >  PAGE WEIGHT                    </TD>
+                      <TD colspan=2  class=tpled1      > 1000.19                         </TD>
+                   </TR>
+
+                </TABLE>
+
+            </BODY>
+         </HTML>

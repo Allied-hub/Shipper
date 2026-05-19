@@ -3,8 +3,13 @@ FROM python:3.11-slim
 
 WORKDIR /scripts
 
-# Dependencias: openpyxl para .xlsx, xlrd para .xls (legacy), flask para HTTP
-RUN pip install --no-cache-dir openpyxl xlrd flask
+# Dependencias:
+#   openpyxl - leer .xlsx si algun export llega en formato moderno
+#   xlrd     - leer .xls binario (Excel 97-2003 OLE)
+#   pandas   - leer HTML con tablas (lo que Tekla exporta disfrazado de .xls)
+#   lxml     - parser HTML usado por pandas
+#   flask    - wrapper HTTP de payload/healthcheck
+RUN pip install --no-cache-dir openpyxl xlrd pandas lxml flask
 
 # Healthcheck: verifica cada 30s que el servidor responde en /health
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \

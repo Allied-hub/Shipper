@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Servidor HTTP que envuelve a tekla_to_allied.py.
-N8N lo invoca con un POST a http://python-runner:5000/run
+Servidor HTTP del contenedor Python.
+
+Este servicio solo genera el payload JSON intermedio desde los archivos Tekla.
+La escritura final .xls se hace en el host con Excel COM/PowerShell.
 
 Endpoints:
     GET  /health  - chequeo de vida (devuelve {"status": "ok"})
-    POST /run     - ejecuta el script y devuelve su JSON de resultado
+    POST /run     - genera /data/output/tekla_payload.json
     GET  /run     - igual que POST, util para pruebas desde el navegador
 """
 
@@ -17,7 +19,7 @@ import os
 import sys
 
 app = Flask(__name__)
-SCRIPT_PATH = '/scripts/tekla_to_allied.py'
+SCRIPT_PATH = '/scripts/export_tekla_payload.py'
 
 
 @app.route('/health', methods=['GET'])
@@ -29,11 +31,11 @@ def health():
 
 @app.route('/run', methods=['POST', 'GET'])
 def run_script():
-    """Ejecuta el script Tekla -> Allied y devuelve su JSON de resultado.
+    """Genera el payload Tekla y devuelve su JSON de resultado.
 
     El script imprime el JSON final en stdout y los logs en stderr.
     Aca leemos ambos, devolvemos el JSON al cliente y adjuntamos los logs
-    en el campo 'logs' por si quieren mostrarse en el email.
+    en el campo 'logs'. El .xls final lo genera scripts/xls_host_server.py.
     """
     try:
         result = subprocess.run(
@@ -62,6 +64,7 @@ def run_script():
 
         # Adjuntar logs para visibilidad en N8N
         data['logs'] = stderr
+        data['message'] = 'Payload generado; el .xls final se escribe desde el host con scripts/run_xls_host.sh'
         return jsonify(data)
 
     except subprocess.TimeoutExpired:
@@ -78,6 +81,6 @@ def run_script():
 
 
 if __name__ == '__main__':
-    print('Servidor Python escuchando en :5000', file=sys.stderr, flush=True)
+    print('Servidor Python de payload escuchando en :5000', file=sys.stderr, flush=True)
     # host=0.0.0.0 para que sea accesible desde otros contenedores en la red docker
     app.run(host='0.0.0.0', port=5000, debug=False)

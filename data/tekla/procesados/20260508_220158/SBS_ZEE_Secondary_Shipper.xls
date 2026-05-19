@@ -1,0 +1,1420 @@
+
+ <HTML xmlns:v="urn:schemas-microsoft-com:vml" xmlns:x="urn:schemas-microsoft-com:office:excel">
+
+
+
+  <HEAD>
+      <STYLE>
+          .tpled1
+          {
+           font-style:  regular          ;  border-top:       .5pt solid silver  ;  background: none    ;
+           font-weight: bold             ;  border-bottom:    .5pt solid silver  ;
+           text-align:  center           ;  border-left:      .5pt solid silver  ;
+           color:       black            ;  border-right:     .5pt solid silver  ;
+           font-family: Arial            ;
+          }
+
+          .tpled2
+          {
+           font-style:  regular          ;  border-top:       .5pt solid black   ;  background: none    ;
+           font-weight: bold             ;  border-bottom:    .5pt solid black   ;
+           text-align:  left             ;  border-left:      .5pt solid black   ;
+           color:       black            ;  border-right:     .5pt solid black   ;
+           font-family: Arial            ;
+          }
+
+         .tpled3
+         {
+          font-style:  regular          ;  border-top:       .5pt solid black   ;  background: none    ;
+          font-weight: regular          ;  border-bottom:    .5pt solid black   ;
+          text-align:  center           ;  border-left:      .5pt solid black   ;
+          color:       red              ;  border-right:     .5pt solid black   ;
+          font-family: Arial            ;
+         }
+
+         .tpled4
+         {
+          font-style:  regular          ;  border-top:       .5pt solid silver  ;  background: none    ;
+          font-weight: regular          ;  border-bottom:    .5pt solid silver  ;
+          text-align:  center           ;  border-left:      .5pt solid silver  ;
+          color:       black            ;  border-right:     .5pt solid silver  ;
+          font-family: Arial            ;
+         }
+       </STYLE>
+
+  </HEAD>
+
+
+  <BODY>
+      <TABLE x:str >
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+
+
+          <TR>
+
+             <TD rowspan=6 colspan=6 class=tpled3>                                                                                                                                                                                                                                                                                         </TD>
+
+             <TD colspan=2 class=tpled2 >                </TD>
+             <TD colspan=2 class=tpled2 > SHIPPER NUMBER </TD>
+             <TD colspan=2 class=tpled2 >                </TD>
+             <TD           class=tpled2 > OF             </TD>
+             <TD           class=tpled2 >                </TD>
+          </TR>
+
+
+
+
+
+
+
+         <TR>
+            <TD colspan=2 class=tpled2       >  JOB NUMBER           </TD>
+            <TD colspan=2 class=tpled2 x:num >  403184               </TD>
+            <TD colspan=2 class=tpled2       >  ISSUE DATE           </TD>
+            <TD colspan=2 class=tpled2       >                       </TD>
+         </TR>
+
+
+
+
+
+
+
+
+          <TR>
+             <TD  colspan=2 class=tpled2      > BUILDING NUMBER </TD>
+             <TD  colspan=2 class=tpled2      > 403184_MARK_V_Corporation_B*** </TD>
+             <TD  colspan=2 class=tpled2      > REVISION NUMBER </TD>
+             <TD  colspan=2 class=tpled2      >                 </TD>
+          </TR>
+
+
+
+
+
+           <TR>
+              <TD colspan= 2 class=tpled2  >  DRAWN BY       </TD>
+              <TD colspan= 2 class=tpled2  >                 </TD>
+              <TD colspan= 2 class=tpled2  >  REVISION BY    </TD>
+              <TD colspan= 2 class=tpled2  >                 </TD>
+           </TR>
+
+
+          <TR>
+             <TD colspan= 2 class=tpled2  >  CHECKED BY     </TD>
+             <TD colspan= 2 class=tpled2  >                 </TD>
+             <TD colspan= 2 class=tpled2  >  REVISION DATE  </TD>
+             <TD colspan= 2 class=tpled2  >                 </TD>
+          </TR>
+
+
+         <TR>
+             <TD colspan=2  class=tpled2 >  BLDG DESCRIP.                                              </TD>
+             <TD colspan=6  class=tpled2 >  MARK V CORPORATION                                         </TD>
+          </TR>
+
+
+
+            <TR>
+               <TD colspan=2  class=tpled2      >  CUSTOMER:                      </TD>
+               <TD colspan=12 class=tpled2      >  Araz Razzaghy                  </TD>
+            </TR>
+
+
+
+           <TR>
+              <TD colspan=14 class=tpled1      > COLD FORM MEMBERS (ZEE)         </TD>
+           </TR>
+
+
+
+          <TR>
+             <TD            class=tpled1      >  QTY            </TD>
+
+
+             <TD            class=tpled1      >  MARK           </TD>
+             <TD colspan=3  class=tpled1      >  DESCRIPTION    </TD>
+             <TD            class=tpled1      >  PART           </TD>
+             <TD            class=tpled1      >  PUNCH          </TD>
+             <TD            class=tpled1      >  DWG #          </TD>
+
+             <TD colspan=2  class=tpled1      >  COLOR          </TD>
+
+             <TD colspan=2  class=tpled1      >  LENGTH         </TD>
+             <TD colspan=2  class=tpled1      >  WT.            </TD>
+
+          </TR>
+
+          <TR>
+
+          </TR>
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140G1                  </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  S-S                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  1'-7 11/16"            </TD>
+                <TD colspan=2 class=tpled4 x:num >  4.58                   </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140G2                  </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  S-G                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  5'-11 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  16.65                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=22.1875 57.75 65.3125                                                                                                                               </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  140G3                  </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  S-G                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  5'-11 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  33.30                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=22.1875 57.75 66                                                                                                                                    </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140G4                  </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X35Z12                </TD>
+                <TD           class=tpled4       >  B-B                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  25'-1 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  141.95                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=12 16 78 82 89.5 131.75 197.75 246 253.5 257.5                                                                                                      </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  4                      </TD>
+
+                <TD           class=tpled4       >  140G5                  </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  S-G                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  1'-3 5/8"              </TD>
+                <TD colspan=2 class=tpled4 x:num >  14.56                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=9.75                                                                                                                                                </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  4                      </TD>
+
+                <TD           class=tpled4       >  140G6                  </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  G-S                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  1'-11 5/8"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  22.00                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=5.625                                                                                                                                               </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140G7                  </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z12                </TD>
+                <TD           class=tpled4       >  B-B                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  30'-7 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  151.20                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140G8                  </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X35Z14                </TD>
+                <TD           class=tpled4       >  B-B                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  30'-7 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  116.34                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140G9                  </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z14                </TD>
+                <TD           class=tpled4       >  B-B                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  30'-7 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  101.57                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140G10                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X35Z12                </TD>
+                <TD           class=tpled4       >  B-B                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  30'-7 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  173.03                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=321.75                                                                                                                                              </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140G11                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z14                </TD>
+                <TD           class=tpled4       >  B-B                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  22'-9 11/16"           </TD>
+                <TD colspan=2 class=tpled4 x:num >  75.65                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140G12                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X35Z12                </TD>
+                <TD           class=tpled4       >  B-B                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  29'-11 1/2"            </TD>
+                <TD colspan=2 class=tpled4 x:num >  169.27                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=40.1875 83.3125                                                                                                                                     </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140G13                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z12                </TD>
+                <TD           class=tpled4       >  B-B                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  29'-11 1/2"            </TD>
+                <TD colspan=2 class=tpled4 x:num >  147.91                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140G14                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X35Z12                </TD>
+                <TD           class=tpled4       >  B-B                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  29'-11 1/2"            </TD>
+                <TD colspan=2 class=tpled4 x:num >  169.27                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140G15                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  S-S                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  3'-1 11/16"            </TD>
+                <TD colspan=2 class=tpled4 x:num >  8.77                   </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  4                      </TD>
+
+                <TD           class=tpled4       >  140G16                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  B-B                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  23'-1 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  258.40                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=264 268                                                                                                                                             </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140G17                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z12                </TD>
+                <TD           class=tpled4       >  B-B                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  29'-11 1/2"            </TD>
+                <TD colspan=2 class=tpled4 x:num >  147.91                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140G18                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  B-S                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  23'-1 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  64.60                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=238 264 268                                                                                                                                         </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140G19                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  B-B                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  17'-9 3/4"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  49.76                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140G20                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z14                </TD>
+                <TD           class=tpled4       >  B-B                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  23'-1 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  76.70                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=9.5 13.5 18.1875 61.3125                                                                                                                            </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  140G21                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  B-B                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  23'-1 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  129.20                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=9.5 13.5                                                                                                                                            </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140G22                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  S-B                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  23'-1 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  64.60                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=9.5 13.5 39.5                                                                                                                                       </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140G23                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  S-S                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  1'-3 1/4"              </TD>
+                <TD colspan=2 class=tpled4 x:num >  3.55                   </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140G24                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X35Z12                </TD>
+                <TD           class=tpled4       >  B-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  21'-1 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  119.36                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=41.5 45.5 48.125 53.5 55.5 57.5 61.5 67.5 71.5 79.5 83.5 109.75 181.75 219.375                                                                      </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140G25                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X35Z12                </TD>
+                <TD           class=tpled4       >  G-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  17'-11 1/4"            </TD>
+                <TD colspan=2 class=tpled4 x:num >  101.34                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=9.5 11.5 13.5 17.5 23.5 27.5 35.5 39.5 51.5 63.75 67.75 75.25 117.5                                                                                 </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140G26                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z12                </TD>
+                <TD           class=tpled4       >  B-B                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  30'-7 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  151.20                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=303.75 307.75                                                                                                                                       </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  140G27                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z14                </TD>
+                <TD           class=tpled4       >  B-B                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  30'-7 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  203.14                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140G28                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X35Z12                </TD>
+                <TD           class=tpled4       >  B-B                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  30'-7 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  173.03                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=45.75                                                                                                                                               </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  140G29                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z12                </TD>
+                <TD           class=tpled4       >  B-B                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  29'-11 1/2"            </TD>
+                <TD colspan=2 class=tpled4 x:num >  295.82                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140G30                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X35Z12                </TD>
+                <TD           class=tpled4       >  B-B                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  29'-11 1/2"            </TD>
+                <TD colspan=2 class=tpled4 x:num >  169.27                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  140P1                  </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  12X35Z14               </TD>
+                <TD           class=tpled4       >  S-S                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  26'-11 1/2"            </TD>
+                <TD colspan=2 class=tpled4 x:num >  255.82                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  5                      </TD>
+
+                <TD           class=tpled4       >  140P2                  </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  12X35Z12               </TD>
+                <TD           class=tpled4       >  B-B                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  30'-7 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  1083.45                </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=45.75 303.75 307.75 315.75 319.75 323.75 333.75 345.75 353.75                                                                                       </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  5                      </TD>
+
+                <TD           class=tpled4       >  140P3                  </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  12X35Z12               </TD>
+                <TD           class=tpled4       >  B-B                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  30'-7 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  1083.45                </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=13.75 21.75 33.75 43.75 47.75 51.75 59.75 63.75 321.75                                                                                              </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  5                      </TD>
+
+                <TD           class=tpled4       >  140P4                  </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  12X35Z12               </TD>
+                <TD           class=tpled4       >  B-S                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  30'-7 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  1083.45                </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=323.5 327.5 353.5 357.5                                                                                                                             </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  5                      </TD>
+
+                <TD           class=tpled4       >  140P5                  </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  12X35Z12               </TD>
+                <TD           class=tpled4       >  S-B                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  30'-7 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  1083.45                </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=10 14 40 44                                                                                                                                         </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140P_EXT1              </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z12                </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  40'-0"                 </TD>
+                <TD colspan=2 class=tpled4 x:num >  197.49                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140P_EXT2              </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  12X35Z12               </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  30'-7 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  216.69                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140P_EXT3              </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X35Z12                </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  30'-7 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  173.03                 </TD>
+
+            </TR>
+
+
+
+
+
+
+                  <TR>
+                  </TR>
+
+                  <TR>
+                      <TD colspan= 10 class=tpled1     >                                 </TD>
+                      <TD colspan=2  class=tpled2      >  PAGE WEIGHT                    </TD>
+                      <TD colspan=2  class=tpled1      > 8530.76                         </TD>
+                   </TR>
+
+                </TABLE>
+
+            </BODY>
+         </HTML>

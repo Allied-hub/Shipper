@@ -1,0 +1,250 @@
+
+ <HTML xmlns:v="urn:schemas-microsoft-com:vml" xmlns:x="urn:schemas-microsoft-com:office:excel">
+
+
+
+  <HEAD>
+      <STYLE>
+          .tpled1
+          {
+           font-style:  regular          ;  border-top:       .5pt solid silver  ;  background: none    ;
+           font-weight: bold             ;  border-bottom:    .5pt solid silver  ;
+           text-align:  center           ;  border-left:      .5pt solid silver  ;
+           color:       black            ;  border-right:     .5pt solid silver  ;
+           font-family: Arial            ;
+          }
+
+          .tpled2
+          {
+           font-style:  regular          ;  border-top:       .5pt solid black   ;  background: none    ;
+           font-weight: bold             ;  border-bottom:    .5pt solid black   ;
+           text-align:  left             ;  border-left:      .5pt solid black   ;
+           color:       black            ;  border-right:     .5pt solid black   ;
+           font-family: Arial            ;
+          }
+
+         .tpled3
+         {
+          font-style:  regular          ;  border-top:       .5pt solid black   ;  background: none    ;
+          font-weight: regular          ;  border-bottom:    .5pt solid black   ;
+          text-align:  center           ;  border-left:      .5pt solid black   ;
+          color:       red              ;  border-right:     .5pt solid black   ;
+          font-family: Arial            ;
+         }
+
+         .tpled4
+         {
+          font-style:  regular          ;  border-top:       .5pt solid silver  ;  background: none    ;
+          font-weight: regular          ;  border-bottom:    .5pt solid silver  ;
+          text-align:  center           ;  border-left:      .5pt solid silver  ;
+          color:       black            ;  border-right:     .5pt solid silver  ;
+          font-family: Arial            ;
+         }
+       </STYLE>
+
+  </HEAD>
+
+
+  <BODY>
+      <TABLE x:str >
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+
+
+          <TR>
+
+             <TD rowspan=6 colspan=6     class=tpled3>       </TD>
+
+             <TD colspan=2 class=tpled2 >                </TD>
+             <TD colspan=2 class=tpled2 > SHIPPER NUMBER </TD>
+             <TD colspan=2 class=tpled2 >                </TD>
+             <TD           class=tpled2 > OF             </TD>
+             <TD           class=tpled2 >                </TD>
+          </TR>
+
+
+
+
+
+
+
+         <TR>
+            <TD colspan=2 class=tpled2       >  JOB NUMBER           </TD>
+            <TD colspan=2 class=tpled2 x:num >  403184               </TD>
+            <TD colspan=2 class=tpled2       >  ISSUE DATE           </TD>
+            <TD colspan=2 class=tpled2       >                       </TD>
+         </TR>
+
+
+
+
+
+
+
+
+          <TR>
+             <TD  colspan=2 class=tpled2      > BUILDING NUMBER </TD>
+             <TD  colspan=2 class=tpled2      > 403184_MARK_V_Corporation_B*** </TD>
+             <TD  colspan=2 class=tpled2      > REVISION NUMBER </TD>
+             <TD  colspan=2 class=tpled2      >                 </TD>
+          </TR>
+
+
+
+
+
+           <TR>
+              <TD colspan= 2 class=tpled2  >  DRAWN BY       </TD>
+              <TD colspan= 2 class=tpled2  >                 </TD>
+              <TD colspan= 2 class=tpled2  >  REVISION BY    </TD>
+              <TD colspan= 2 class=tpled2  >                 </TD>
+           </TR>
+
+
+          <TR>
+             <TD colspan= 2 class=tpled2  >  CHECKED BY     </TD>
+             <TD colspan= 2 class=tpled2  >                 </TD>
+             <TD colspan= 2 class=tpled2  >  REVISION DATE  </TD>
+             <TD colspan= 2 class=tpled2  >                 </TD>
+          </TR>
+
+
+         <TR>
+             <TD colspan=2  class=tpled2 >  BLDG DESCRIP.                                              </TD>
+             <TD colspan=6  class=tpled2 >  MARK V CORPORATION                                         </TD>
+          </TR>
+
+
+
+            <TR>
+               <TD colspan=2  class=tpled2      >  CUSTOMER:                      </TD>
+               <TD colspan=12 class=tpled2      >  Araz Razzaghy                  </TD>
+            </TR>
+
+
+
+           <TR>
+              <TD colspan=14 class=tpled1      > PRE-GALVANIZED CLIPS            </TD>
+           </TR>
+
+
+
+          <TR>
+             <TD            class=tpled1      >  QTY            </TD>
+
+
+             <TD colspan=2  class=tpled1      >  MARK           </TD>
+             <TD colspan=5  class=tpled1      >  DESCRIPTION    </TD>
+
+             <TD colspan=2  class=tpled1      >  COLOR          </TD>
+             <TD colspan=2  class=tpled1      >  DRAWING #      </TD>
+
+
+
+
+             <TD colspan=2  class=tpled1      >  WT.            </TD>
+
+          </TR>
+
+          <TR>
+
+          </TR>
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  33                     </TD>
+
+                <TD colspan=2 class=tpled4       >  140CCF1                </TD>
+                <TD colspan=5 class=tpled4       >  CCF_CL103                         </TD>
+
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4       >  CL103                  </TD>
+
+
+
+                <TD colspan=2 class=tpled4 x:num >  70.95                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  10                     </TD>
+
+                <TD colspan=2 class=tpled4       >  140CCF3                </TD>
+                <TD colspan=5 class=tpled4       >  CCF_CL104                         </TD>
+
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4       >  CL104                  </TD>
+
+
+
+                <TD colspan=2 class=tpled4 x:num >  13.40                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  4                      </TD>
+
+                <TD colspan=2 class=tpled4       >  140CCF5                </TD>
+                <TD colspan=5 class=tpled4       >  CCF_CL100                         </TD>
+
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4       >  CL100                  </TD>
+
+
+
+                <TD colspan=2 class=tpled4 x:num >  5.36                   </TD>
+
+            </TR>
+
+
+
+
+
+
+                  <TR>
+                  </TR>
+
+                  <TR>
+                      <TD colspan= 10 class=tpled1     >                                 </TD>
+                      <TD colspan=2  class=tpled2      >  PAGE WEIGHT                    </TD>
+                      <TD colspan=2  class=tpled1      > 89.71                           </TD>
+                   </TR>
+
+                </TABLE>
+
+            </BODY>
+         </HTML>

@@ -1,0 +1,1613 @@
+{
+  "status": "success",
+  "generated_at": "2026-05-19T21:19:30",
+  "job_number": "403174",
+  "files_discovered": 7,
+  "files_processed": 9,
+  "project_standard": "SBS",
+  "project_type": "residential",
+  "sheets": [
+    {
+      "source_file": "SBS_CEE_Secondary_Shipper.xls",
+      "tab_tekla": "SBS_CEE_Secondary_Shipper",
+      "tab_macro": "Cold Form Members (CEE)",
+      "shipper_number": 1,
+      "total_shippers": 9,
+      "encabezado": {
+        "job": "403174",
+        "edificio": "403174 - GLEN OAKS CLUB MSS",
+        "descrip": "GLEN OAKS CLUB",
+        "cliente": "MODERN STEEL SOLUTIONS"
+      },
+      "piezas": [
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "1",
+          "mark": "134BC1",
+          "desc": "Base Angle",
+          "pitch": null,
+          "part": "8X25C16",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "7'-0\"",
+          "wt": 19.56
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "1",
+          "mark": "134BC2",
+          "desc": "Base Angle",
+          "pitch": null,
+          "part": "8X25C16",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "36'-0\"",
+          "wt": 100.61
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134BC3",
+          "desc": "Base Angle",
+          "pitch": null,
+          "part": "8X25C16",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "15'-6\"",
+          "wt": 86.64
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "1",
+          "mark": "134BC4",
+          "desc": "Base Angle",
+          "pitch": null,
+          "part": "8X25C16",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "21'-4\"",
+          "wt": 59.62
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "1",
+          "mark": "134BC5",
+          "desc": "Base Angle",
+          "pitch": null,
+          "part": "8X25C16",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "112'-6\"",
+          "wt": 314.4
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "1",
+          "mark": "134BC6",
+          "desc": "Base Angle",
+          "pitch": null,
+          "part": "8X25C16",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "13'-0\"",
+          "wt": 36.33
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "1",
+          "mark": "134BC7",
+          "desc": "Base Angle",
+          "pitch": null,
+          "part": "8X25C16",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "12'-6\"",
+          "wt": 34.93
+        },
+        {
+          "detalle": "Web=  8.4375\"   47.5625\"",
+          "detalles": [
+            "Web=  8.4375\"   47.5625\""
+          ],
+          "qty": "1",
+          "mark": "134DH1",
+          "desc": "Frame Opening Header",
+          "pitch": null,
+          "part": "8X25C16",
+          "punch": "G-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "4'-8\"",
+          "wt": 13.04
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "1",
+          "mark": "134DH2",
+          "desc": "Frame Opening Header",
+          "pitch": null,
+          "part": "8X25C16",
+          "punch": "G-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "7'-11 1/2\"",
+          "wt": 22.24
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "1",
+          "mark": "134DH3",
+          "desc": "Frame Opening Header",
+          "pitch": null,
+          "part": "8X25C16",
+          "punch": "G-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "2'-11 1/2\"",
+          "wt": 8.27
+        },
+        {
+          "detalle": "Web=  39.25\"   88.25\"   97.3125\"",
+          "detalles": [
+            "Web=  39.25\"   88.25\"   97.3125\""
+          ],
+          "qty": "4",
+          "mark": "134DJ1",
+          "desc": "Jamb",
+          "pitch": null,
+          "part": "8X35C16",
+          "punch": "G-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "9'-7 3/4\"",
+          "wt": 123.32
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134DJ2",
+          "desc": "Jamb",
+          "pitch": null,
+          "part": "8X35C16",
+          "punch": "G-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "3'-11 1/2\"",
+          "wt": 25.3
+        },
+        {
+          "detalle": "Web=  39.25\"   88.25\"",
+          "detalles": [
+            "Web=  39.25\"   88.25\""
+          ],
+          "qty": "2",
+          "mark": "134DJ3",
+          "desc": "Jamb",
+          "pitch": null,
+          "part": "8X35C16",
+          "punch": "G-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "9'-11 1/2\"",
+          "wt": 63.66
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134DJ4",
+          "desc": "Jamb",
+          "pitch": null,
+          "part": "8X25C16",
+          "punch": "G-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "1'-5 5/8\"",
+          "wt": 8.2
+        },
+        {
+          "detalle": "Web=  6.4375\"   57.5\"",
+          "detalles": [
+            "Web=  6.4375\"   57.5\""
+          ],
+          "qty": "2",
+          "mark": "134DJ5",
+          "desc": "Jamb",
+          "pitch": null,
+          "part": "8X35C16",
+          "punch": "G-S",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "5'-9 1/16\"",
+          "wt": 36.8
+        },
+        {
+          "detalle": "Web=  8.4375\"   47.5625\"",
+          "detalles": [
+            "Web=  8.4375\"   47.5625\""
+          ],
+          "qty": "1",
+          "mark": "134DS1",
+          "desc": "Framed Opening Sill",
+          "pitch": null,
+          "part": "8X25C16",
+          "punch": "G-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "4'-8\"",
+          "wt": 13.04
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "1",
+          "mark": "134DS2",
+          "desc": "Framed Opening Sill",
+          "pitch": null,
+          "part": "8X25C16",
+          "punch": "G-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "2'-11 1/2\"",
+          "wt": 8.27
+        },
+        {
+          "detalle": "Web=  76.1875\"   295.3125\"",
+          "detalles": [
+            "Web=  76.1875\"   295.3125\""
+          ],
+          "qty": "1",
+          "mark": "134G14",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25C16",
+          "punch": "G-S",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "26'-3 1/2\"",
+          "wt": 73.48
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "1",
+          "mark": "134G23",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25C16",
+          "punch": "G-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "7'-11 1/2\"",
+          "wt": 22.24
+        },
+        {
+          "detalle": "Web=  19.9375\"   23.9375\"",
+          "detalles": [
+            "Web=  19.9375\"   23.9375\""
+          ],
+          "qty": "2",
+          "mark": "134P1",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25C16",
+          "punch": "G-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "25'-7 11/16\"",
+          "wt": 143.32
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134P11",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25C16",
+          "punch": "G-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "5'-2 13/16\"",
+          "wt": 29.26
+        }
+      ],
+      "peso": 1242.53,
+      "raw_rows": [],
+      "template_tab_macro": "Cold Form Members (CEE)"
+    },
+    {
+      "source_file": "SBS_CEE_Secondary_Shipper.xls",
+      "tab_tekla": "SBS_CEE_Secondary_Shipper",
+      "tab_macro": "Cold Form Members (CEE) (2)",
+      "shipper_number": 2,
+      "total_shippers": 9,
+      "encabezado": {
+        "job": "403174",
+        "edificio": "403174 - GLEN OAKS CLUB MSS",
+        "descrip": "GLEN OAKS CLUB",
+        "cliente": "MODERN STEEL SOLUTIONS"
+      },
+      "piezas": [
+        {
+          "detalle": "Web=  29.125\"",
+          "detalles": [
+            "Web=  29.125\""
+          ],
+          "qty": "2",
+          "mark": "134P12",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25C16",
+          "punch": "G-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "5'-5 1/8\"",
+          "wt": 30.34
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "1",
+          "mark": "134P13",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25C16",
+          "punch": "G-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "5'-2 1/2\"",
+          "wt": 14.56
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134P14",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25C16",
+          "punch": "G-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "19'-5 1/2\"",
+          "wt": 108.76
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134P18",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25C16",
+          "punch": "G-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "25'-11 1/2\"",
+          "wt": 145.08
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134P22",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25C16",
+          "punch": "G-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "20'-11 1/2\"",
+          "wt": 117.14
+        },
+        {
+          "detalle": "Web=  237.5\"   241.5\"",
+          "detalles": [
+            "Web=  237.5\"   241.5\""
+          ],
+          "qty": "2",
+          "mark": "134P31",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25C16",
+          "punch": "G-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "21'-7 11/16\"",
+          "wt": 120.96
+        }
+      ],
+      "peso": 536.84,
+      "raw_rows": [],
+      "template_tab_macro": "Cold Form Members (CEE)"
+    },
+    {
+      "source_file": "SBS_Clips_Shipper.xls",
+      "tab_tekla": "SBS_Clips_Shipper",
+      "tab_macro": "Clips",
+      "shipper_number": 3,
+      "total_shippers": 9,
+      "encabezado": {
+        "job": "403174",
+        "edificio": "403174 - GLEN OAKS CLUB MSS",
+        "descrip": "GLEN OAKS CLUB",
+        "cliente": "MODERN STEEL SOLUTIONS"
+      },
+      "piezas": [
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "12",
+          "mark": "134CCF1",
+          "desc": "Clip",
+          "pitch": null,
+          "part": "",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "134CCF1",
+          "length": null,
+          "wt": 25.8
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134CCF2",
+          "desc": "Clip",
+          "pitch": null,
+          "part": "",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "134CCF2",
+          "length": null,
+          "wt": 9.92
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "1",
+          "mark": "134CCF6",
+          "desc": "Clip",
+          "pitch": null,
+          "part": "",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "134CCF6",
+          "length": null,
+          "wt": 2.15
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "1",
+          "mark": "134CCF7",
+          "desc": "Clip",
+          "pitch": null,
+          "part": "",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "134CCF7",
+          "length": null,
+          "wt": 2.15
+        }
+      ],
+      "peso": 40.02,
+      "raw_rows": [],
+      "template_tab_macro": "Clips"
+    },
+    {
+      "source_file": "SBS_Eave_Struts_Shipper.xls",
+      "tab_tekla": "SBS_Eave_Struts_Shipper",
+      "tab_macro": "Eave Struts",
+      "shipper_number": 4,
+      "total_shippers": 9,
+      "encabezado": {
+        "job": "403174",
+        "edificio": "403174 - GLEN OAKS CLUB MSS",
+        "descrip": "GLEN OAKS CLUB",
+        "cliente": "MODERN STEEL SOLUTIONS"
+      },
+      "piezas": [
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134ET1",
+          "desc": "Eave Strut (LSSS)",
+          "pitch": "3:12",
+          "part": "8.25E14",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "1'-5 7/8\"",
+          "wt": 13.02
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134ET2",
+          "desc": "Eave Strut (LSSS)",
+          "pitch": "3:12",
+          "part": "8.25E14",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "23'-1 13/16\"",
+          "wt": 202.52
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134ET3",
+          "desc": "Eave Strut (LSSS)",
+          "pitch": "3:12",
+          "part": "8.25E14",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "18'-9 13/16\"",
+          "wt": 164.62
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "1",
+          "mark": "134ET4",
+          "desc": "Eave Strut (LSSS)",
+          "pitch": "3:12",
+          "part": "8.25E14",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "25'-3 13/16\"",
+          "wt": 110.74
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "1",
+          "mark": "134ET5",
+          "desc": "Eave Strut (LSSS)",
+          "pitch": "3:12",
+          "part": "8.25E14",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "25'-3 13/16\"",
+          "wt": 110.74
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134ET6",
+          "desc": "Eave Strut (LSSS)",
+          "pitch": "3:12",
+          "part": "8.25E14",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "20'-3 13/16\"",
+          "wt": 177.74
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134ET7",
+          "desc": "Eave Strut (LSSS)",
+          "pitch": "3:12",
+          "part": "8.25E14",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "19'-3 9/16\"",
+          "wt": 168.8
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134ET8",
+          "desc": "Eave Strut (LSSS)",
+          "pitch": "3:12",
+          "part": "8.25E14",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "1'-4 1/8\"",
+          "wt": 11.74
+        }
+      ],
+      "peso": 959.92,
+      "raw_rows": [],
+      "template_tab_macro": "Eave Struts"
+    },
+    {
+      "source_file": "SBS_Miscellaneous_Shipper.xls",
+      "tab_tekla": "SBS_Miscellaneous_Shipper",
+      "tab_macro": "Misc. Cold Form",
+      "shipper_number": 5,
+      "total_shippers": 9,
+      "encabezado": {
+        "job": "403174",
+        "edificio": "403174 - GLEN OAKS CLUB MSS",
+        "descrip": "GLEN OAKS CLUB",
+        "cliente": "MODERN STEEL SOLUTIONS"
+      },
+      "piezas": [
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": 4,
+          "mark": "134GH1",
+          "desc": "Girt Header (8 1/4CX6X4)",
+          "pitch": null,
+          "part": "8X2CH16",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "5'-7 11/16\"",
+          "wt": 53.39
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": 2,
+          "mark": "134SA1",
+          "desc": "Sheeting Angle",
+          "pitch": null,
+          "part": "2X4X16GA",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "13'-11 5/16\"",
+          "wt": 35.5
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": 1,
+          "mark": "134SA10",
+          "desc": "Sheeting Angle",
+          "pitch": null,
+          "part": "2X4X16GA",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "5'-2 13/16\"",
+          "wt": 6.66
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": 5,
+          "mark": "134SA2",
+          "desc": "Sheeting Angle",
+          "pitch": null,
+          "part": "2X4X16GA",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "11'-11 3/4\"",
+          "wt": 76.25
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": 14,
+          "mark": "134SA3",
+          "desc": "Sheeting Angle",
+          "pitch": null,
+          "part": "2X4X16GA",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "19'-5 11/16\"",
+          "wt": 347.06
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": 4,
+          "mark": "134SA4",
+          "desc": "Sheeting Angle",
+          "pitch": null,
+          "part": "2X4X16GA",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "0'-10\"",
+          "wt": 4.24
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": 2,
+          "mark": "134SA5",
+          "desc": "Sheeting Angle",
+          "pitch": null,
+          "part": "2X4X16GA-L",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "113'-9 7/8\"",
+          "wt": 289.78
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": 2,
+          "mark": "134SA6",
+          "desc": "Sheeting Angle",
+          "pitch": null,
+          "part": "8X4X16GA",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "13'-11 5/16\"",
+          "wt": 73.36
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": 2,
+          "mark": "134SA7",
+          "desc": "Sheeting Angle",
+          "pitch": null,
+          "part": "2X4X16GA",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "5'-5 1/8\"",
+          "wt": 13.82
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": 2,
+          "mark": "134SA8",
+          "desc": "Sheeting Angle",
+          "pitch": null,
+          "part": "2X4X16GA",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "5'-7\"",
+          "wt": 14.22
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": 2,
+          "mark": "134SA9",
+          "desc": "Sheeting Angle",
+          "pitch": null,
+          "part": "2X4X16GA",
+          "punch": null,
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "3'-0 13/16\"",
+          "wt": 7.82
+        }
+      ],
+      "peso": 922.1,
+      "raw_rows": [],
+      "template_tab_macro": "Misc. Cold Form"
+    },
+    {
+      "source_file": "SBS_ZEE_Secondary_Shipper.xls",
+      "tab_tekla": "SBS_ZEE_Secondary_Shipper",
+      "tab_macro": "Cold Form Members (ZEE)",
+      "shipper_number": 6,
+      "total_shippers": 9,
+      "encabezado": {
+        "job": "403174",
+        "edificio": "403174 - GLEN OAKS CLUB MSS",
+        "descrip": "GLEN OAKS CLUB",
+        "cliente": "MODERN STEEL SOLUTIONS"
+      },
+      "piezas": [
+        {
+          "detalle": "Web=  14\"   18\"",
+          "detalles": [
+            "Web=  14\"   18\""
+          ],
+          "qty": "1",
+          "mark": "134G1",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25Z16",
+          "punch": "??-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "13'-6 13/16\"",
+          "wt": 37.91
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "1",
+          "mark": "134G2",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25Z16",
+          "punch": "G-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "7'-5 3/8\"",
+          "wt": 20.81
+        },
+        {
+          "detalle": "Web=  144.8125\"   148.8125\"",
+          "detalles": [
+            "Web=  144.8125\"   148.8125\""
+          ],
+          "qty": "1",
+          "mark": "134G3",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25Z16",
+          "punch": "G-??",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "13'-6 13/16\"",
+          "wt": 37.91
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134G4",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25Z16",
+          "punch": "A-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "26'-1 1/2\"",
+          "wt": 145.98
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "4",
+          "mark": "134G5",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25Z16",
+          "punch": "G-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "4'-8\"",
+          "wt": 52.16
+        },
+        {
+          "detalle": "Web=  69.1875\"   108.3125\"",
+          "detalles": [
+            "Web=  69.1875\"   108.3125\""
+          ],
+          "qty": "1",
+          "mark": "134G6",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25Z16",
+          "punch": "S-S",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "14'-9 1/2\"",
+          "wt": 41.32
+        },
+        {
+          "detalle": "Web=  9.5\"   13.5\"",
+          "detalles": [
+            "Web=  9.5\"   13.5\""
+          ],
+          "qty": "2",
+          "mark": "134G7",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25Z16",
+          "punch": "S-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "12'-0 1/2\"",
+          "wt": 67.28
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134G8",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25Z16",
+          "punch": "G-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "10'-5 5/8\"",
+          "wt": 58.48
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134G9",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25Z16",
+          "punch": "A-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "16'-5 1/2\"",
+          "wt": 91.96
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "4",
+          "mark": "134G10",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25Z16",
+          "punch": "G-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "13'-2 5/8\"",
+          "wt": 147.72
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "6",
+          "mark": "134G11",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25Z16",
+          "punch": "G-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "5'-5 1/8\"",
+          "wt": 90.96
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134G12",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25Z16",
+          "punch": "A-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "21'-9 1/2\"",
+          "wt": 121.76
+        },
+        {
+          "detalle": "Web=  11.9375\"   15.9375\"",
+          "detalles": [
+            "Web=  11.9375\"   15.9375\""
+          ],
+          "qty": "2",
+          "mark": "134G13",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25Z16",
+          "punch": "G-S",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "20'-11 11/16\"",
+          "wt": 117.18
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134G15",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25Z16",
+          "punch": "A-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "28'-3 1/2\"",
+          "wt": 158.08
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "4",
+          "mark": "134G16",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25Z16",
+          "punch": "A-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "7'-3 11/16\"",
+          "wt": 81.68
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134G17",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25Z16",
+          "punch": "G-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "7'-3 11/16\"",
+          "wt": 40.84
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134G18",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25Z16",
+          "punch": "A-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "23'-3 1/2\"",
+          "wt": 130.14
+        },
+        {
+          "detalle": "Web=  90.1875\"   189.3125\"",
+          "detalles": [
+            "Web=  90.1875\"   189.3125\""
+          ],
+          "qty": "1",
+          "mark": "134G19",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25Z16",
+          "punch": "A-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "22'-1 1/2\"",
+          "wt": 61.81
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134G20",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25Z16",
+          "punch": "G-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "6'-9 11/16\"",
+          "wt": 38.04
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134G21",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25Z16",
+          "punch": "A-S",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "21'-5 1/2\"",
+          "wt": 119.9
+        },
+        {
+          "detalle": "Web=  82\"   181.125\"",
+          "detalles": [
+            "Web=  82\"   181.125\""
+          ],
+          "qty": "1",
+          "mark": "134G22",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25Z16",
+          "punch": "B-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "22'-1 5/16\"",
+          "wt": 61.77
+        }
+      ],
+      "peso": 1723.69,
+      "raw_rows": [],
+      "template_tab_macro": "Cold Form Members (ZEE)"
+    },
+    {
+      "source_file": "SBS_ZEE_Secondary_Shipper.xls",
+      "tab_tekla": "SBS_ZEE_Secondary_Shipper",
+      "tab_macro": "Cold Form Members (ZEE) (2)",
+      "shipper_number": 7,
+      "total_shippers": 9,
+      "encabezado": {
+        "job": "403174",
+        "edificio": "403174 - GLEN OAKS CLUB MSS",
+        "descrip": "GLEN OAKS CLUB",
+        "cliente": "MODERN STEEL SOLUTIONS"
+      },
+      "piezas": [
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "2",
+          "mark": "134G24",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25Z16",
+          "punch": "S-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "5'-11 11/16\"",
+          "wt": 33.38
+        },
+        {
+          "detalle": "Web=  131\"   135\"",
+          "detalles": [
+            "Web=  131\"   135\""
+          ],
+          "qty": "2",
+          "mark": "134G25",
+          "desc": "Wall Girt",
+          "pitch": null,
+          "part": "8X25Z16",
+          "punch": "A-S",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "12'-0 1/2\"",
+          "wt": 67.28
+        },
+        {
+          "detalle": "Web=  22\"   26\"   52\"   56\"",
+          "detalles": [
+            "Web=  22\"   26\"   52\"   56\""
+          ],
+          "qty": "2",
+          "mark": "134P2",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25Z14",
+          "punch": "??-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "24'-1 1/2\"",
+          "wt": 160.02
+        },
+        {
+          "detalle": "Web=  19.9375\"   23.9375\"   37.9375\"   41.9375\"",
+          "detalles": [
+            "Web=  19.9375\"   23.9375\"   37.9375\"   41.9375\""
+          ],
+          "qty": "1",
+          "mark": "134P3",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25Z12",
+          "punch": "G-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "27'-9 11/16\"",
+          "wt": 137.29
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "1",
+          "mark": "134P4",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25Z12",
+          "punch": "A-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "28'-1 1/2\"",
+          "wt": 138.86
+        },
+        {
+          "detalle": "Web=  47.5\"   51.5\"",
+          "detalles": [
+            "Web=  47.5\"   51.5\""
+          ],
+          "qty": "1",
+          "mark": "134P5",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25Z12",
+          "punch": "A-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "28'-1 1/2\"",
+          "wt": 138.86
+        },
+        {
+          "detalle": "Web=  45.75\"",
+          "detalles": [
+            "Web=  45.75\""
+          ],
+          "qty": "1",
+          "mark": "134P6",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25Z12",
+          "punch": "A-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "28'-1 1/2\"",
+          "wt": 138.86
+        },
+        {
+          "detalle": "Web=  291.75\"",
+          "detalles": [
+            "Web=  291.75\""
+          ],
+          "qty": "1",
+          "mark": "134P7",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25Z12",
+          "punch": "A-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "28'-1 1/2\"",
+          "wt": 138.86
+        },
+        {
+          "detalle": "Web=  286\"   290\"",
+          "detalles": [
+            "Web=  286\"   290\""
+          ],
+          "qty": "1",
+          "mark": "134P8",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25Z12",
+          "punch": "A-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "28'-1 1/2\"",
+          "wt": 138.86
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "1",
+          "mark": "134P9",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25Z12",
+          "punch": "A-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "28'-1 1/2\"",
+          "wt": 138.86
+        },
+        {
+          "detalle": "Web=  291.75\"   295.75\"   309.75\"   313.75\"",
+          "detalles": [
+            "Web=  291.75\"   295.75\"   309.75\"   313.75\""
+          ],
+          "qty": "1",
+          "mark": "134P10",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25Z12",
+          "punch": "A-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "27'-9 11/16\"",
+          "wt": 137.29
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "4",
+          "mark": "134P15",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25Z14",
+          "punch": "A-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "23'-9 1/2\"",
+          "wt": 315.64
+        },
+        {
+          "detalle": "Web=  97.75\"   101.75\"",
+          "detalles": [
+            "Web=  97.75\"   101.75\""
+          ],
+          "qty": "2",
+          "mark": "134P16",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25Z14",
+          "punch": "A-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "23'-9 1/2\"",
+          "wt": 157.82
+        },
+        {
+          "detalle": "Web=  183.75\"   187.75\"",
+          "detalles": [
+            "Web=  183.75\"   187.75\""
+          ],
+          "qty": "2",
+          "mark": "134P17",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25Z14",
+          "punch": "A-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "23'-9 1/2\"",
+          "wt": 157.82
+        },
+        {
+          "detalle": "Web=  45.75\"",
+          "detalles": [
+            "Web=  45.75\""
+          ],
+          "qty": "2",
+          "mark": "134P19",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25Z12",
+          "punch": "A-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "30'-3 1/2\"",
+          "wt": 299.12
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "4",
+          "mark": "134P20",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25Z12",
+          "punch": "A-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "30'-3 1/2\"",
+          "wt": 598.24
+        }
+      ],
+      "peso": 2897.06,
+      "raw_rows": [],
+      "template_tab_macro": "Cold Form Members (ZEE)"
+    },
+    {
+      "source_file": "SBS_ZEE_Secondary_Shipper.xls",
+      "tab_tekla": "SBS_ZEE_Secondary_Shipper",
+      "tab_macro": "Cold Form Members (ZEE) (3)",
+      "shipper_number": 8,
+      "total_shippers": 9,
+      "encabezado": {
+        "job": "403174",
+        "edificio": "403174 - GLEN OAKS CLUB MSS",
+        "descrip": "GLEN OAKS CLUB",
+        "cliente": "MODERN STEEL SOLUTIONS"
+      },
+      "piezas": [
+        {
+          "detalle": "Web=  317.75\"",
+          "detalles": [
+            "Web=  317.75\""
+          ],
+          "qty": "2",
+          "mark": "134P21",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25Z12",
+          "punch": "A-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "30'-3 1/2\"",
+          "wt": 299.12
+        },
+        {
+          "detalle": "Web=  45.75\"",
+          "detalles": [
+            "Web=  45.75\""
+          ],
+          "qty": "2",
+          "mark": "134P23",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25Z14",
+          "punch": "A-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "25'-3 1/2\"",
+          "wt": 167.76
+        },
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": "4",
+          "mark": "134P24",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25Z14",
+          "punch": "A-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "25'-3 1/2\"",
+          "wt": 335.52
+        },
+        {
+          "detalle": "Web=  257.75\"",
+          "detalles": [
+            "Web=  257.75\""
+          ],
+          "qty": "2",
+          "mark": "134P25",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25Z14",
+          "punch": "A-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "25'-3 1/2\"",
+          "wt": 167.76
+        },
+        {
+          "detalle": "Web=  263.5\"   267.5\"",
+          "detalles": [
+            "Web=  263.5\"   267.5\""
+          ],
+          "qty": "1",
+          "mark": "134P26",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25Z14",
+          "punch": "A-G",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "23'-9 11/16\"",
+          "wt": 78.96
+        },
+        {
+          "detalle": "Web=  18.1875\"   22.1875\"",
+          "detalles": [
+            "Web=  18.1875\"   22.1875\""
+          ],
+          "qty": "1",
+          "mark": "134P27",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25Z14",
+          "punch": "G-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "23'-9 11/16\"",
+          "wt": 78.96
+        },
+        {
+          "detalle": "Web=  233.5\"   237.5\"   263.5\"   267.5\"",
+          "detalles": [
+            "Web=  233.5\"   237.5\"   263.5\"   267.5\""
+          ],
+          "qty": "2",
+          "mark": "134P28",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25Z14",
+          "punch": "A-??",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "24'-1 1/2\"",
+          "wt": 160.02
+        },
+        {
+          "detalle": "Web=  263.5\"   267.5\"",
+          "detalles": [
+            "Web=  263.5\"   267.5\""
+          ],
+          "qty": "1",
+          "mark": "134P29",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25Z14",
+          "punch": "A-??",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "24'-1 1/2\"",
+          "wt": 80.01
+        },
+        {
+          "detalle": "Web=  22\"   26\"",
+          "detalles": [
+            "Web=  22\"   26\""
+          ],
+          "qty": "1",
+          "mark": "134P30",
+          "desc": "Roof Purlin",
+          "pitch": null,
+          "part": "8X25Z14",
+          "punch": "??-A",
+          "color": "Pre-Galvanized",
+          "dwg": "",
+          "length": "24'-1 1/2\"",
+          "wt": 80.01
+        }
+      ],
+      "peso": 1448.12,
+      "raw_rows": [],
+      "template_tab_macro": "Cold Form Members (ZEE)"
+    },
+    {
+      "source_file": "Standing_Seam_Hardware_Shipper.xls",
+      "tab_tekla": "Standing_Seam_Hardware_Shipper",
+      "tab_macro": "Standing Seam Hardware",
+      "shipper_number": 9,
+      "total_shippers": 9,
+      "encabezado": {
+        "job": "403174",
+        "edificio": "403174 - GLEN OAKS CLUB MSS",
+        "descrip": "GLEN OAKS CLUB",
+        "cliente": "MODERN STEEL SOLUTIONS"
+      },
+      "piezas": [
+        {
+          "detalle": null,
+          "detalles": [],
+          "qty": 6,
+          "mark": "STRP1",
+          "desc": "Rolls of Strapping",
+          "pitch": null,
+          "part": "",
+          "punch": null,
+          "color": "White",
+          "dwg": "STRP1",
+          "length": "175'- 0\"",
+          "wt": 132
+        }
+      ],
+      "peso": 132.0,
+      "raw_rows": [],
+      "template_tab_macro": "Standing Seam Hardware"
+    }
+  ],
+  "log_entries": [
+    "OK [SBS_CEE_Secondary_Shipper.xls] -> [Cold Form Members (CEE)] | 27 piezas | Peso: 1779.37",
+    "OK [SBS_Clips_Shipper.xls] -> [Clips] | 4 piezas | Peso: 40.02",
+    "OK [SBS_Eave_Struts_Shipper.xls] -> [Eave Struts] | 8 piezas | Peso: 959.92",
+    "OK [SBS_Miscellaneous_Shipper.xls] -> [Misc. Cold Form] | 11 piezas | Peso: 922.1",
+    "SKIP [SBS_Pre_Galv_Clips_Shipper.xls] -> material extra residencial",
+    "OK [SBS_ZEE_Secondary_Shipper.xls] -> [Cold Form Members (ZEE)] | 46 piezas | Peso: 6068.87",
+    "OK [Standing_Seam_Hardware_Shipper.xls] -> [Standing Seam Hardware] | 1 piezas | Peso: 132.0",
+    "SPLIT [Cold Form Members (CEE)] -> 2 pestanas por limite de 28 filas",
+    "SPLIT [Cold Form Members (ZEE)] -> 3 pestanas por limite de 28 filas"
+  ],
+  "files_with_errors": []
+}

@@ -105,6 +105,15 @@ def t_dwg(v):
     if v is None or str(v).strip() in ("0", ""): return ""
     return str(v).strip()
 
+def t_length(v):
+    if v is None: return v
+    s = str(v).strip()
+    # Tekla HTML appends a spurious trailing `" ` after the real closing quote
+    # e.g. `20'-7 3/8" "` → `20'-7 3/8"`
+    while len(s) >= 2 and s.endswith(' "'):
+        s = s[:-2].rstrip()
+    return s
+
 def to_float(v):
     """Convierte a float si es posible (para columna WT.)."""
     if v is None or v == "":
@@ -114,12 +123,22 @@ def to_float(v):
     except (ValueError, TypeError):
         return v
 
+_DETALLE_PREFIXES = ("IFLG=", "WEB=", "IFLG =", "WEB =", "WEB :", "FLG :")
+
 def agregar_pulgadas(texto):
-    """Convierte 'IFlg=3 10.75 13.25' -> 'IFlg=  3\"   10.75\"   13.25\"'"""
+    """Formatea una fila de detalle Tekla añadiendo " a los números.
+
+    Soporta los formatos que Tekla exporta:
+      'IFlg=3 10.75'   -> 'IFlg=  3"   10.75"'
+      'Web=22.1875'    -> 'Web=  22.1875"'
+      'Web : 1.75 16.125' -> 'Web :  1.75"   16.125"'
+      'Flg : 71.9375'  -> 'Flg :  71.9375"'
+    Si los valores ya tienen " se conservan tal cual.
+    """
     if not texto: return texto
     texto = str(texto).strip()
     prefijo, resto = "", texto
-    for p in ["IFlg=", "Web=", "IFlg =", "Web ="]:
+    for p in ["IFlg=", "Web=", "IFlg =", "Web =", "Web :", "Flg :"]:
         if texto.upper().startswith(p.upper()):
             prefijo = texto[:len(p)]
             resto = texto[len(p):].strip()
@@ -127,16 +146,17 @@ def agregar_pulgadas(texto):
     partes = resto.split()
     resultado = []
     for parte in partes:
+        valor = parte.rstrip('"')
         try:
-            float(parte)
-            resultado.append(f'{parte}"')
+            float(valor)
+            resultado.append(f'{valor}"')
         except ValueError:
             resultado.append(parte)
     return prefijo + "  " + "   ".join(resultado)
 
 def es_detalle(fila):
     for c in fila:
-        if c and (str(c).upper().startswith("IFLG=") or str(c).upper().startswith("WEB=")):
+        if c and str(c).strip().upper().startswith(_DETALLE_PREFIXES):
             return True
     return False
 
@@ -149,7 +169,7 @@ def extraer_peso(fila):
         if c and "PAGE WEIGHT" in str(c).upper():
             encontrado = True
             continue
-        if encontrado and c is not None:
+        if encontrado and c is not None and str(c).strip() != "":
             try: return float(c)
             except: return c
     return None
@@ -157,40 +177,217 @@ def extraer_peso(fila):
 def concat_detalle(fila):
     return " ".join(str(c).strip() for c in fila if c and str(c).strip())
 
-# ── LECTURA DE ARCHIVO EXCEL (.xls o .xlsx) ───────────────────
+# ── LECTURA DE ARCHIVO EXCEL (.xls binario, .xlsx o HTML) ─────
 def cargar_archivo_excel(ruta):
     """
-    Carga un archivo Excel y devuelve un workbook de openpyxl.
-    Si es .xls (Excel 97-2003), convierte en memoria usando xlrd.
-    Si es .xlsx, lo abre directamente.
+    Carga un archivo Excel y devuelve un workbook openpyxl.
+    Detecta el formato REAL por los primeros bytes (no por extension):
+    - HTML disfrazado de .xls (lo que Tekla exporta): convierte con pandas
+    - .xls binario real (Excel 97-2003 OLE): convierte con xlrd
+    - .xlsx (Office Open XML): abre directo con openpyxl
     """
-    if ruta.lower().endswith('.xls'):
-        import xlrd
-        xls_book = xlrd.open_workbook(ruta)
-        wb = openpyxl.Workbook()
-        wb.remove(wb.active)  # quitar la hoja por defecto
+    with open(ruta, 'rb') as f:
+        head = f.read(64)
+    head_stripped = head.lstrip().lower()
 
-        for sheet_name in xls_book.sheet_names():
-            xls_sheet = xls_book.sheet_by_name(sheet_name)
-            ws = wb.create_sheet(sheet_name)
-            for row_idx in range(xls_sheet.nrows):
-                for col_idx in range(xls_sheet.ncols):
-                    cell_type = xls_sheet.cell_type(row_idx, col_idx)
-                    value = xls_sheet.cell_value(row_idx, col_idx)
+    # Caso 1: HTML disfrazado de Excel (lo que entrega Tekla)
+    if (head_stripped.startswith(b'<html') or
+        head_stripped.startswith(b'<!doctype') or
+        head_stripped.startswith(b'<table') or
+        b'<html' in head_stripped):
+        return _html_a_workbook(ruta)
 
-                    if cell_type in (xlrd.XL_CELL_EMPTY, xlrd.XL_CELL_BLANK):
-                        continue
-                    if cell_type == xlrd.XL_CELL_DATE:
-                        value = xlrd.xldate.xldate_as_datetime(value, xls_book.datemode)
-                    elif cell_type == xlrd.XL_CELL_BOOLEAN:
-                        value = bool(value)
-                    elif cell_type == xlrd.XL_CELL_ERROR:
-                        value = None
-
-                    ws.cell(row=row_idx + 1, column=col_idx + 1, value=value)
-        return wb
-    else:
+    # Caso 2: .xlsx real (firma ZIP)
+    if head.startswith(b'PK\x03\x04'):
         return openpyxl.load_workbook(ruta, data_only=True)
+
+    # Caso 3: .xls binario real (firma OLE Compound Document)
+    if head.startswith(b'\xd0\xcf\x11\xe0'):
+        return _xls_binario_a_workbook(ruta)
+
+    raise ValueError(
+        f"Formato no reconocido en {os.path.basename(ruta)}. "
+        f"Primeros bytes: {head[:16]!r}"
+    )
+
+
+def _xls_binario_a_workbook(ruta):
+    """Lee un .xls binario real (Excel 97-2003) usando xlrd."""
+    import xlrd
+    xls_book = xlrd.open_workbook(ruta)
+    wb = openpyxl.Workbook()
+    wb.remove(wb.active)
+    for sheet_name in xls_book.sheet_names():
+        xls_sheet = xls_book.sheet_by_name(sheet_name)
+        ws = wb.create_sheet(sheet_name)
+        for row_idx in range(xls_sheet.nrows):
+            for col_idx in range(xls_sheet.ncols):
+                cell_type = xls_sheet.cell_type(row_idx, col_idx)
+                value = xls_sheet.cell_value(row_idx, col_idx)
+                if cell_type in (xlrd.XL_CELL_EMPTY, xlrd.XL_CELL_BLANK):
+                    continue
+                if cell_type == xlrd.XL_CELL_DATE:
+                    value = xlrd.xldate.xldate_as_datetime(value, xls_book.datemode)
+                elif cell_type == xlrd.XL_CELL_BOOLEAN:
+                    value = bool(value)
+                elif cell_type == xlrd.XL_CELL_ERROR:
+                    value = None
+                ws.cell(row=row_idx + 1, column=col_idx + 1, value=value)
+    return wb
+
+
+def _html_a_workbook(ruta):
+    """
+    Lee un archivo HTML disfrazado de .xls y devuelve un workbook openpyxl.
+    Es lo que Tekla exporta en su formato 'Excel': HTML con tablas adentro.
+    """
+    import pandas as pd
+
+    # header=None: no asumir que la primera fila es encabezado;
+    # keep_default_na=False y na_values=[]: no convertir strings a NaN
+    tables = pd.read_html(ruta, header=None, keep_default_na=False, na_values=[])
+
+    if not tables:
+        raise ValueError(f"No se encontraron tablas HTML en {os.path.basename(ruta)}")
+
+    wb = openpyxl.Workbook()
+    wb.remove(wb.active)
+
+    # El nombre de la pestaña se deriva del nombre del archivo
+    # (SBS_Eave_Struts_Shipper.xls -> SBS_Eave_Struts_Shipper)
+    base_name = os.path.splitext(os.path.basename(ruta))[0]
+    # openpyxl limita los nombres de hoja a 31 caracteres
+    sheet_name = base_name[:31]
+    ws = wb.create_sheet(sheet_name)
+
+    # Tekla suele exportar una sola tabla; tomamos esa
+    df = tables[0]
+
+    for row_idx, row in enumerate(df.itertuples(index=False), start=1):
+        for col_idx, value in enumerate(row, start=1):
+            # Saltar valores vacios o NaN
+            if value is None:
+                continue
+            if isinstance(value, float) and pd.isna(value):
+                continue
+            if isinstance(value, str) and value.strip() == "":
+                continue
+            ws.cell(row=row_idx, column=col_idx, value=value)
+    return wb
+
+
+def _set_cell_safe(ws, row, col, value):
+    """
+    Asigna un valor a una celda manejando rangos merged (celdas fusionadas).
+    Si la celda objetivo es parte de un merge, escribe en la celda principal
+    (top-left del rango). Si no, escribe directo.
+    """
+    cell = ws.cell(row, col)
+    if isinstance(cell, openpyxl.cell.cell.MergedCell):
+        for merged_range in ws.merged_cells.ranges:
+            if cell.coordinate in merged_range:
+                ws.cell(merged_range.min_row, merged_range.min_col).value = value
+                return
+        # Si la celda dice ser MergedCell pero no encontramos su rango, ignorar
+        return
+    cell.value = value
+
+
+HEADER_ALIASES = {
+    "DRAWING #": "DWG #",
+    "DRAWING NO": "DWG #",
+    "DRAWING NO.": "DWG #",
+    "DWG": "DWG #",
+    "WT": "WT.",
+    "WEIGHT": "WT.",
+}
+
+FIELD_HEADERS = {
+    "qty": "QTY",
+    "mark": "MARK",
+    "desc": "DESCRIPTION",
+    "pitch": "PITCH",
+    "part": "PART",
+    "punch": "PUNCH",
+    "dwg": "DWG #",
+    "color": "COLOR",
+    "length": "LENGTH",
+    "wt": "WT.",
+}
+
+
+def normalizar_header(v):
+    if v is None:
+        return ""
+    texto = " ".join(str(v).strip().upper().split())
+    if texto.endswith(":"):
+        texto = texto[:-1].strip()
+    return HEADER_ALIASES.get(texto, texto)
+
+
+def rango_merged(ws, row, col):
+    coord = ws.cell(row, col).coordinate
+    for merged_range in ws.merged_cells.ranges:
+        if coord in merged_range:
+            return merged_range
+    return None
+
+
+def buscar_fila_encabezados(ws):
+    for fila in ws.iter_rows(min_row=1, max_row=min(ws.max_row, 40)):
+        headers = [normalizar_header(c.value) for c in fila if c.value]
+        if "QTY" in headers:
+            return fila[0].row
+    return None
+
+
+def mapa_columnas(ws, header_row=None):
+    header_row = header_row or buscar_fila_encabezados(ws)
+    if not header_row:
+        return None, {}
+
+    columnas = {}
+    for cell in ws[header_row]:
+        header = normalizar_header(cell.value)
+        if header and header not in columnas:
+            columnas[header] = cell.column
+    return header_row, columnas
+
+
+def valor_por_header(fila, columnas, header):
+    col = columnas.get(FIELD_HEADERS.get(header, header))
+    if not col or col > len(fila):
+        return None
+    return fila[col - 1]
+
+
+def primer_detalle(fila):
+    for c in fila:
+        if not c:
+            continue
+        texto = str(c).strip()
+        if texto.upper().startswith(_DETALLE_PREFIXES):
+            return texto
+    return None
+
+
+def celda_valor_despues_de_rotulo(ws, cell):
+    merged = rango_merged(ws, cell.row, cell.column)
+    if merged:
+        return merged.min_row, merged.max_col + 1
+    return cell.row, cell.column + 1
+
+
+def valor_despues_de_rotulo(ws, cell):
+    etiqueta = normalizar_header(cell.value)
+    for col in range(cell.column + 1, ws.max_column + 1):
+        valor = ws.cell(cell.row, col).value
+        if valor is None or str(valor).strip() == "":
+            continue
+        if normalizar_header(valor) == etiqueta:
+            continue
+        return valor
+    return None
 
 
 # ── LECTURA ENCABEZADO ────────────────────────────────────────
@@ -200,59 +397,57 @@ def leer_encabezado(ws):
         for c in fila:
             if not c.value: continue
             v = str(c.value).upper()
-            if "JOB NUMBER"      in v: enc["job"]      = ws.cell(c.row, c.column+1).value
-            if "ISSUE DATE"      in v: enc["fecha"]    = ws.cell(c.row, c.column+1).value
-            if "BUILDING NUMBER" in v: enc["edificio"] = ws.cell(c.row, c.column+1).value
-            if "BLDG DESCRIP"    in v: enc["descrip"]  = ws.cell(c.row, c.column+1).value
-            if "CUSTOMER"        in v: enc["cliente"]  = ws.cell(c.row, c.column+2).value
+            valor = valor_despues_de_rotulo(ws, c)
+            if valor is None: continue
+            if "JOB NUMBER"      in v: enc["job"]      = valor
+            if "ISSUE DATE"      in v: enc["fecha"]    = valor
+            if "BUILDING NUMBER" in v: enc["edificio"] = valor
+            if "BLDG DESCRIP"    in v: enc["descrip"]  = valor
+            if "CUSTOMER"        in v: enc["cliente"]  = valor
     return enc
 
 # ── LECTURA DE PIEZAS ─────────────────────────────────────────
 def leer_piezas(ws, tipo):
     piezas, pieza, peso = [], None, None
-    for fila in ws.iter_rows(min_row=11, values_only=True):
+    header_row, columnas = mapa_columnas(ws)
+    if not header_row or "QTY" not in columnas:
+        raise ValueError(f"No se encontro fila de encabezados QTY en '{ws.title}'")
+
+    for fila in ws.iter_rows(min_row=header_row + 1, values_only=True):
         if es_peso(fila):
             peso = extraer_peso(fila)
             break
-        if es_detalle(fila):
+        detalle = primer_detalle(fila)
+        if detalle:
             if pieza:
-                pieza["detalle"] = agregar_pulgadas(concat_detalle(fila))
+                detalle_fmt = agregar_pulgadas(detalle)
+                pieza.setdefault("detalles", []).append(detalle_fmt)
+                pieza["detalle"] = "\n".join(pieza["detalles"])
             continue
-        cols = list(fila) + [None]*15
-        qty = cols[0]
-        if qty is not None and str(qty).strip() not in ("", "QTY"):
+
+        qty = valor_por_header(fila, columnas, "qty")
+        mark_raw = valor_por_header(fila, columnas, "mark")
+        has_qty = qty is not None and str(qty).strip() not in ("", "QTY")
+        has_mark = mark_raw is not None and str(mark_raw).strip() not in ("", "MARK")
+        if has_qty or has_mark:
             if pieza: piezas.append(pieza)
-            pieza = {"detalle": None}
-
-            if tipo == "Eave Struts":
-                pieza.update({"qty":cols[0],"mark":cols[1],"desc":t_desc(cols[2]),
-                    "pitch":cols[3],"part":t_part(cols[4]),"punch":cols[5],
-                    "color":t_color(cols[6]),"dwg":t_dwg(cols[7]),
-                    "length":cols[8],"wt":to_float(cols[9])})
-
-            elif tipo in ("Cold Form Members (CEE)","Cold Form Members (ZEE)",
-                          "Cold Form Members (ZEE) (2)","Cold Form Members (ZEE) (3)"):
-                pieza.update({"qty":cols[0],"mark":cols[1],"desc":t_desc(cols[2]),
-                    "part":t_part(cols[3]),"punch":cols[4],
-                    "dwg":t_dwg(cols[5]),"color":t_color(cols[6]),
-                    "length":cols[7],"wt":to_float(cols[8])})
-
-            elif tipo == "Misc. Cold Form":
-                pieza.update({"qty":cols[0],"mark":cols[1],"desc":t_desc(cols[2]),
-                    "part":t_part(cols[3]),"dwg":t_dwg(cols[4]),
-                    "color":t_color(cols[5]),"length":cols[6],"wt":to_float(cols[7])})
-
-            elif tipo in ("Clips","Pre-Galv Clips"):
-                pieza.update({"qty":cols[0],"mark":cols[1],"desc":t_desc(cols[2]),
-                    "color":t_color(cols[3]),"dwg":t_dwg(cols[4]),"wt":to_float(cols[5])})
-
-            elif tipo == "Standing Seam Hardware":
-                pieza.update({"desc":t_desc(cols[0]),"dwg":t_dwg(cols[1]),
-                    "color":t_color(cols[2]),"length":cols[3],"wt":to_float(cols[4])})
-
-            elif tipo == "Screws":
-                pieza.update({"qty":cols[0],"mark":cols[1],"desc":t_desc(cols[2]),
-                    "color":t_color(cols[3]),"length":cols[4],"wt":to_float(cols[5])})
+            color = t_color(valor_por_header(fila, columnas, "color"))
+            if tipo in ("Clips", "Pre-Galv Clips") and not color:
+                color = "Pre-Galvanized"
+            pieza = {
+                "detalle": None,
+                "detalles": [],
+                "qty": qty,
+                "mark": mark_raw,
+                "desc": t_desc(valor_por_header(fila, columnas, "desc")),
+                "pitch": valor_por_header(fila, columnas, "pitch"),
+                "part": t_part(valor_por_header(fila, columnas, "part")),
+                "punch": valor_por_header(fila, columnas, "punch"),
+                "color": color,
+                "dwg": t_dwg(valor_por_header(fila, columnas, "dwg")),
+                "length": t_length(valor_por_header(fila, columnas, "length")),
+                "wt": to_float(valor_por_header(fila, columnas, "wt")),
+            }
 
     if pieza: piezas.append(pieza)
     return piezas, peso
@@ -263,67 +458,55 @@ def escribir_enc(mws, enc, num, total):
         for c in fila:
             if not c.value: continue
             v = str(c.value).upper()
-            if "SHIPPER NUMBER" in v: mws.cell(c.row, c.column+2).value = num
-            if v.strip() == "OF":     mws.cell(c.row, c.column+1).value = total
-            if "JOB NUMBER"      in v: mws.cell(c.row, c.column+1).value = enc.get("job")
-            if "ISSUE DATE"      in v: mws.cell(c.row, c.column+1).value = enc.get("fecha")
-            if "BUILDING NUMBER" in v: mws.cell(c.row, c.column+1).value = enc.get("edificio")
-            if "BLDG DESCRIP"    in v: mws.cell(c.row, c.column+1).value = enc.get("descrip")
-            if "CUSTOMER"        in v: mws.cell(c.row, c.column+2).value = enc.get("cliente")
+            row, col = celda_valor_despues_de_rotulo(mws, c)
+            if "SHIPPER NUMBER" in v: _set_cell_safe(mws, row, col, num)
+            if v.strip() == "OF":     _set_cell_safe(mws, row, col, total)
+            if "JOB NUMBER"      in v and enc.get("job") is not None:      _set_cell_safe(mws, row, col, enc.get("job"))
+            if "ISSUE DATE"      in v and enc.get("fecha") is not None:    _set_cell_safe(mws, row, col, enc.get("fecha"))
+            if "BUILDING NUMBER" in v and enc.get("edificio") is not None: _set_cell_safe(mws, row, col, enc.get("edificio"))
+            if "BLDG DESCRIP"    in v and enc.get("descrip") is not None:  _set_cell_safe(mws, row, col, enc.get("descrip"))
+            if "CUSTOMER"        in v and enc.get("cliente") is not None:  _set_cell_safe(mws, row, col, enc.get("cliente"))
 
 def escribir_piezas(mws, piezas, peso, tipo):
-    r = 11
+    header_row, columnas = mapa_columnas(mws)
+    if not header_row or "QTY" not in columnas:
+        raise ValueError(f"No se encontro fila de encabezados QTY en macro '{mws.title}'")
+
+    # Desfusionar cualquier rango merged en el area de datos (fila 11+).
+    # El template de la macro tiene merges placeholder ahi que rompen
+    # la escritura. No son funcionales, solo visuales.
+    rangos_a_desfusionar = []
+    for merged_range in list(mws.merged_cells.ranges):
+        if merged_range.min_row >= header_row + 2:
+            rangos_a_desfusionar.append(str(merged_range))
+    for rng_str in rangos_a_desfusionar:
+        mws.unmerge_cells(rng_str)
+
+    data_start = header_row + 2
+    for row in mws.iter_rows(min_row=data_start, max_row=mws.max_row):
+        for cell in row:
+            cell.value = None
+
+    r = data_start
+    detail_col = min(columnas.values()) if columnas else 1
     for p in piezas:
-        if tipo == "Eave Struts":
-            mws.cell(r,1).value=p.get("qty");   mws.cell(r,2).value=p.get("mark")
-            mws.cell(r,3).value=p.get("desc");  mws.cell(r,4).value=p.get("pitch")
-            mws.cell(r,5).value=p.get("part");  mws.cell(r,6).value=p.get("punch")
-            mws.cell(r,7).value=p.get("color"); mws.cell(r,8).value=p.get("dwg")
-            mws.cell(r,9).value=p.get("length");mws.cell(r,10).value=p.get("wt")
-
-        elif tipo in ("Cold Form Members (CEE)","Cold Form Members (ZEE)",
-                      "Cold Form Members (ZEE) (2)","Cold Form Members (ZEE) (3)"):
-            mws.cell(r,1).value=p.get("qty");   mws.cell(r,2).value=p.get("mark")
-            mws.cell(r,3).value=p.get("desc");  mws.cell(r,4).value=p.get("part")
-            mws.cell(r,5).value=p.get("punch"); mws.cell(r,6).value=p.get("dwg")
-            mws.cell(r,7).value=p.get("color"); mws.cell(r,8).value=p.get("length")
-            mws.cell(r,9).value=p.get("wt")
-
-        elif tipo == "Misc. Cold Form":
-            mws.cell(r,1).value=p.get("qty");   mws.cell(r,2).value=p.get("mark")
-            mws.cell(r,3).value=p.get("desc");  mws.cell(r,4).value=p.get("part")
-            mws.cell(r,5).value=p.get("dwg");   mws.cell(r,6).value=p.get("color")
-            mws.cell(r,7).value=p.get("length");mws.cell(r,8).value=p.get("wt")
-
-        elif tipo in ("Clips","Pre-Galv Clips"):
-            mws.cell(r,1).value=p.get("qty");   mws.cell(r,2).value=p.get("mark")
-            mws.cell(r,3).value=p.get("desc");  mws.cell(r,7).value=p.get("color")
-            mws.cell(r,8).value=p.get("dwg");   mws.cell(r,10).value=p.get("wt")
-
-        elif tipo == "Standing Seam Hardware":
-            mws.cell(r,3).value=p.get("desc");  mws.cell(r,6).value=p.get("dwg")
-            mws.cell(r,7).value=p.get("color"); mws.cell(r,9).value=p.get("length")
-            mws.cell(r,10).value=p.get("wt")
-
-        elif tipo == "Screws":
-            mws.cell(r,1).value=p.get("qty");   mws.cell(r,2).value=p.get("mark")
-            mws.cell(r,3).value=p.get("desc");  mws.cell(r,7).value=p.get("color")
-            mws.cell(r,9).value=p.get("length");mws.cell(r,10).value=p.get("wt")
-
+        for field, header in FIELD_HEADERS.items():
+            col = columnas.get(header)
+            if col:
+                mws.cell(r, col).value = p.get(field)
         r += 1
-        if p.get("detalle"):
-            mws.cell(r, 6).value = p["detalle"]
+
+        detalles = p.get("detalles") or ([p["detalle"]] if p.get("detalle") else [])
+        for detalle in detalles:
+            mws.cell(r, detail_col).value = detalle
             r += 1
 
     if peso is not None:
         r += 1
-        for fila in mws.iter_rows(min_row=max(1, r-5), max_row=r+3):
-            for c in fila:
-                if c.value and "PAGE WEIGHT" in str(c.value).upper():
-                    mws.cell(c.row, c.column+1).value = peso
-                    return
-        mws.cell(r, 9).value  = "PAGE WEIGHT:"
-        mws.cell(r, 10).value = peso
+        wt_col = columnas.get("WT.", 10)
+        label_col = max(1, wt_col - 2)
+        mws.cell(r, label_col).value = "PAGE WEIGHT:"
+        mws.cell(r, wt_col).value = peso
 
 # ── PROCESAMIENTO PRINCIPAL ───────────────────────────────────
 def procesar():
@@ -420,9 +603,9 @@ def procesar():
             for c in fila:
                 if not c.value: continue
                 if "JOB NUMBER" in str(c.value).upper():
-                    cov.cell(c.row, c.column+1).value = job_number
+                    _set_cell_safe(cov, c.row, c.column+1, job_number)
                 if "TOTAL NUMBER" in str(c.value).upper():
-                    cov.cell(c.row, c.column+1).value = total
+                    _set_cell_safe(cov, c.row, c.column+1, total)
 
     # 6) Pestana LOG
     if "LOG" in macro_wb.sheetnames:
@@ -472,16 +655,12 @@ def procesar():
 
 # ── ENTRY POINT ───────────────────────────────────────────────
 if __name__ == "__main__":
-    try:
-        resultado = procesar()
-        output_json(resultado)
-        # Exit 0 siempre que el script haya terminado de forma controlada.
-        # Que el IF de N8N decida si seguir (success/partial_success) o detener (error/no_files).
-        sys.exit(0)
-    except Exception as e:
-        output_json({
-            "status": "fatal_error",
-            "message": str(e),
-            "traceback": traceback.format_exc()
-        })
-        sys.exit(1)
+    output_json({
+        "status": "error",
+        "message": (
+            "La escritura directa .xlsx esta deshabilitada. "
+            "Use scripts/run_xls_host.sh para generar el .xls final, "
+            "o scripts/export_tekla_payload.py para generar solo el payload."
+        )
+    })
+    sys.exit(1)

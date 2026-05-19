@@ -1,0 +1,1738 @@
+
+ <HTML xmlns:v="urn:schemas-microsoft-com:vml" xmlns:x="urn:schemas-microsoft-com:office:excel">
+
+
+
+  <HEAD>
+      <STYLE>
+          .tpled1
+          {
+           font-style:  regular          ;  border-top:       .5pt solid silver  ;  background: none    ;
+           font-weight: bold             ;  border-bottom:    .5pt solid silver  ;
+           text-align:  center           ;  border-left:      .5pt solid silver  ;
+           color:       black            ;  border-right:     .5pt solid silver  ;
+           font-family: Arial            ;
+          }
+
+          .tpled2
+          {
+           font-style:  regular          ;  border-top:       .5pt solid black   ;  background: none    ;
+           font-weight: bold             ;  border-bottom:    .5pt solid black   ;
+           text-align:  left             ;  border-left:      .5pt solid black   ;
+           color:       black            ;  border-right:     .5pt solid black   ;
+           font-family: Arial            ;
+          }
+
+         .tpled3
+         {
+          font-style:  regular          ;  border-top:       .5pt solid black   ;  background: none    ;
+          font-weight: regular          ;  border-bottom:    .5pt solid black   ;
+          text-align:  center           ;  border-left:      .5pt solid black   ;
+          color:       red              ;  border-right:     .5pt solid black   ;
+          font-family: Arial            ;
+         }
+
+         .tpled4
+         {
+          font-style:  regular          ;  border-top:       .5pt solid silver  ;  background: none    ;
+          font-weight: regular          ;  border-bottom:    .5pt solid silver  ;
+          text-align:  center           ;  border-left:      .5pt solid silver  ;
+          color:       black            ;  border-right:     .5pt solid silver  ;
+          font-family: Arial            ;
+         }
+       </STYLE>
+
+  </HEAD>
+
+
+  <BODY>
+      <TABLE x:str >
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+
+
+          <TR>
+
+             <TD rowspan=6 colspan=6 class=tpled3>                                                                                                                                                                                                                                                                                         </TD>
+
+             <TD colspan=2 class=tpled2 >                </TD>
+             <TD colspan=2 class=tpled2 > SHIPPER NUMBER </TD>
+             <TD colspan=2 class=tpled2 >                </TD>
+             <TD           class=tpled2 > OF             </TD>
+             <TD           class=tpled2 >                </TD>
+          </TR>
+
+
+
+
+
+
+
+         <TR>
+            <TD colspan=2 class=tpled2       >  JOB NUMBER           </TD>
+            <TD colspan=2 class=tpled2 x:num >  403174               </TD>
+            <TD colspan=2 class=tpled2       >  ISSUE DATE           </TD>
+            <TD colspan=2 class=tpled2       >                       </TD>
+         </TR>
+
+
+
+
+
+
+
+
+          <TR>
+             <TD  colspan=2 class=tpled2      > BUILDING NUMBER </TD>
+             <TD  colspan=2 class=tpled2      > 403174 - GLEN OAKS CLUB MSS    </TD>
+             <TD  colspan=2 class=tpled2      > REVISION NUMBER </TD>
+             <TD  colspan=2 class=tpled2      >                 </TD>
+          </TR>
+
+
+
+
+
+           <TR>
+              <TD colspan= 2 class=tpled2  >  DRAWN BY       </TD>
+              <TD colspan= 2 class=tpled2  >                 </TD>
+              <TD colspan= 2 class=tpled2  >  REVISION BY    </TD>
+              <TD colspan= 2 class=tpled2  >                 </TD>
+           </TR>
+
+
+          <TR>
+             <TD colspan= 2 class=tpled2  >  CHECKED BY     </TD>
+             <TD colspan= 2 class=tpled2  >                 </TD>
+             <TD colspan= 2 class=tpled2  >  REVISION DATE  </TD>
+             <TD colspan= 2 class=tpled2  >                 </TD>
+          </TR>
+
+
+         <TR>
+             <TD colspan=2  class=tpled2 >  BLDG DESCRIP.                                              </TD>
+             <TD colspan=6  class=tpled2 > GLEN OAKS CLUB                                              </TD>
+          </TR>
+
+
+
+            <TR>
+               <TD colspan=2  class=tpled2      >  CUSTOMER:                      </TD>
+               <TD colspan=12 class=tpled2      > MODERN STEEL SOLUTIONS          </TD>
+            </TR>
+
+
+
+           <TR>
+              <TD colspan=14 class=tpled1      > COLD FORM MEMBERS (ZEE)         </TD>
+           </TR>
+
+
+
+          <TR>
+             <TD            class=tpled1      >  QTY            </TD>
+
+
+             <TD            class=tpled1      >  MARK           </TD>
+             <TD colspan=3  class=tpled1      >  DESCRIPTION    </TD>
+             <TD            class=tpled1      >  PART           </TD>
+             <TD            class=tpled1      >  PUNCH          </TD>
+             <TD            class=tpled1      >  DWG #          </TD>
+
+             <TD colspan=2  class=tpled1      >  COLOR          </TD>
+
+             <TD colspan=2  class=tpled1      >  LENGTH         </TD>
+             <TD colspan=2  class=tpled1      >  WT.            </TD>
+
+          </TR>
+
+          <TR>
+
+          </TR>
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  134G1                  </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  ??-G                   </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  13'-6 13/16"  "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  37.91                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=14 18                                                                                                                                               </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  134G2                  </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  G-G                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  7'-5 3/8"     "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  20.81                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  134G3                  </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  G-??                   </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  13'-6 13/16"  "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  37.91                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=144.8125 148.8125                                                                                                                                   </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134G4                  </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  A-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  26'-1 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  145.98                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  4                      </TD>
+
+                <TD           class=tpled4       >  134G5                  </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  G-G                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  4'-8"         "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  52.16                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  134G6                  </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  S-S                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  14'-9 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  41.32                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=69.1875 108.3125                                                                                                                                    </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134G7                  </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  S-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  12'-0 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  67.28                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=9.5 13.5                                                                                                                                            </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134G8                  </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  G-G                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  10'-5 5/8"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  58.48                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134G9                  </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  A-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  16'-5 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  91.96                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  4                      </TD>
+
+                <TD           class=tpled4       >  134G10                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  G-G                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  13'-2 5/8"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  147.72                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  6                      </TD>
+
+                <TD           class=tpled4       >  134G11                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  G-G                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  5'-5 1/8"     "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  90.96                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134G12                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  A-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  21'-9 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  121.76                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134G13                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  G-S                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  20'-11 11/16" "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  117.18                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=11.9375 15.9375                                                                                                                                     </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134G15                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  A-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  28'-3 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  158.08                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  4                      </TD>
+
+                <TD           class=tpled4       >  134G16                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  A-G                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  7'-3 11/16"   "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  81.68                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134G17                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  G-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  7'-3 11/16"   "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  40.84                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134G18                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  A-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  23'-3 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  130.14                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  134G19                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  A-G                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  22'-1 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  61.81                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=90.1875 189.3125                                                                                                                                    </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134G20                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  G-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  6'-9 11/16"   "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  38.04                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134G21                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  A-S                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  21'-5 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  119.90                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  134G22                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  B-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  22'-1 5/16"   "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  61.77                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=82 181.125                                                                                                                                          </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134G24                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  S-G                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  5'-11 11/16"  "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  33.38                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134G25                 </TD>
+                <TD colspan=3 class=tpled4       >  Wall Girt                         </TD>
+
+                <TD           class=tpled4       >  8X25Z16                </TD>
+                <TD           class=tpled4       >  A-S                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  12'-0 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  67.28                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=131 135                                                                                                                                             </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134P2                  </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z14                </TD>
+                <TD           class=tpled4       >  ??-A                   </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  24'-1 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  160.02                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=22 26 52 56                                                                                                                                         </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  134P3                  </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z12                </TD>
+                <TD           class=tpled4       >  G-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  27'-9 11/16"  "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  137.29                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=19.9375 23.9375 37.9375 41.9375                                                                                                                     </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  134P4                  </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z12                </TD>
+                <TD           class=tpled4       >  A-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  28'-1 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  138.86                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  134P5                  </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z12                </TD>
+                <TD           class=tpled4       >  A-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  28'-1 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  138.86                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=47.5 51.5                                                                                                                                           </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  134P6                  </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z12                </TD>
+                <TD           class=tpled4       >  A-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  28'-1 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  138.86                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=45.75                                                                                                                                               </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  134P7                  </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z12                </TD>
+                <TD           class=tpled4       >  A-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  28'-1 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  138.86                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=291.75                                                                                                                                              </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  134P8                  </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z12                </TD>
+                <TD           class=tpled4       >  A-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  28'-1 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  138.86                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=286 290                                                                                                                                             </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  134P9                  </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z12                </TD>
+                <TD           class=tpled4       >  A-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  28'-1 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  138.86                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  134P10                 </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z12                </TD>
+                <TD           class=tpled4       >  A-G                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  27'-9 11/16"  "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  137.29                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=291.75 295.75 309.75 313.75                                                                                                                         </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  4                      </TD>
+
+                <TD           class=tpled4       >  134P15                 </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z14                </TD>
+                <TD           class=tpled4       >  A-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  23'-9 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  315.64                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134P16                 </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z14                </TD>
+                <TD           class=tpled4       >  A-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  23'-9 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  157.82                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=97.75 101.75                                                                                                                                        </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134P17                 </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z14                </TD>
+                <TD           class=tpled4       >  A-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  23'-9 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  157.82                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=183.75 187.75                                                                                                                                       </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134P19                 </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z12                </TD>
+                <TD           class=tpled4       >  A-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  30'-3 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  299.12                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=45.75                                                                                                                                               </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  4                      </TD>
+
+                <TD           class=tpled4       >  134P20                 </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z12                </TD>
+                <TD           class=tpled4       >  A-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  30'-3 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  598.24                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134P21                 </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z12                </TD>
+                <TD           class=tpled4       >  A-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  30'-3 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  299.12                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=317.75                                                                                                                                              </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134P23                 </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z14                </TD>
+                <TD           class=tpled4       >  A-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  25'-3 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  167.76                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=45.75                                                                                                                                               </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  4                      </TD>
+
+                <TD           class=tpled4       >  134P24                 </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z14                </TD>
+                <TD           class=tpled4       >  A-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  25'-3 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  335.52                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134P25                 </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z14                </TD>
+                <TD           class=tpled4       >  A-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  25'-3 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  167.76                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=257.75                                                                                                                                              </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  134P26                 </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z14                </TD>
+                <TD           class=tpled4       >  A-G                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  23'-9 11/16"  "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  78.96                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=263.5 267.5                                                                                                                                         </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  134P27                 </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z14                </TD>
+                <TD           class=tpled4       >  G-A                    </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  23'-9 11/16"  "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  78.96                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=18.1875 22.1875                                                                                                                                     </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  2                      </TD>
+
+                <TD           class=tpled4       >  134P28                 </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z14                </TD>
+                <TD           class=tpled4       >  A-??                   </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  24'-1 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  160.02                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=233.5 237.5 263.5 267.5                                                                                                                             </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  134P29                 </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z14                </TD>
+                <TD           class=tpled4       >  A-??                   </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  24'-1 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  80.01                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=263.5 267.5                                                                                                                                         </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  134P30                 </TD>
+                <TD colspan=3 class=tpled4       >  Roof Purlin                       </TD>
+
+                <TD           class=tpled4       >  8X25Z14                </TD>
+                <TD           class=tpled4       >  ??-A                   </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  24'-1 1/2"    "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  80.01                  </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > Web=22 26                                                                                                                                               </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  134P_EXT2              </TD>
+                <TD colspan=3 class=tpled4       >  Extra Material                    </TD>
+
+                <TD           class=tpled4       >  8X25Z12                </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4       >  0                      </TD>
+
+                <TD colspan=2 class=tpled4 x:num >  40'-0"        "        </TD>
+                <TD colspan=2 class=tpled4 x:num >  197.49                 </TD>
+
+            </TR>
+
+
+
+
+
+
+                  <TR>
+                  </TR>
+
+                  <TR>
+                      <TD colspan= 10 class=tpled1     >                                 </TD>
+                      <TD colspan=2  class=tpled2      >  PAGE WEIGHT                    </TD>
+                      <TD colspan=2  class=tpled1      > 6266.36                         </TD>
+                   </TR>
+
+                </TABLE>
+
+            </BODY>
+         </HTML>

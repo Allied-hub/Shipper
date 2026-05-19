@@ -18,11 +18,15 @@ services:
       - n8n_data:/home/node/.n8n
       # N8N necesita poder leer el archivo generado para adjuntarlo al email
       - ./data/output:/data/output:ro
+    extra_hosts:
+      # El workflow llama al servidor host .xls, que corre fuera de Docker
+      # para poder usar Excel COM via powershell.exe.
+      - "host.docker.internal:host-gateway"
     depends_on:
       python-runner:
         condition: service_healthy
 
-  # ─── Servicio 2: Python Runner (procesa los Excel) ───
+  # ─── Servicio 2: Python Runner (lee Tekla y genera payload JSON) ───
   python-runner:
     build:
       context: .
@@ -30,12 +34,11 @@ services:
     container_name: python-runner
     restart: unless-stopped
     environment:
-      # Variables que usa tekla_to_allied.py (rutas DENTRO del contenedor)
+      # Variables que usa export_tekla_payload.py (rutas DENTRO del contenedor)
       - TEKLA_FOLDER=/data/tekla
-      - MACRO_PATH=/data/macro/Allied_Macro.xlsx
       - OUTPUT_FOLDER=/data/output
     volumes:
-      - ./scripts:/scripts:ro          # scripts: server.py + tekla_to_allied.py
+      - ./scripts:/scripts:ro          # scripts Python/PowerShell
       - ./data/tekla:/data/tekla       # entrada
       - ./data/macro:/data/macro       # macro Allied
       - ./data/output:/data/output     # salida

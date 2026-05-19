@@ -1,0 +1,348 @@
+
+ <HTML xmlns:v="urn:schemas-microsoft-com:vml" xmlns:x="urn:schemas-microsoft-com:office:excel">
+
+
+
+  <HEAD>
+      <STYLE>
+          .tpled1
+          {
+           font-style:  regular          ;  border-top:       .5pt solid silver  ;  background: none    ;
+           font-weight: bold             ;  border-bottom:    .5pt solid silver  ;
+           text-align:  center           ;  border-left:      .5pt solid silver  ;
+           color:       black            ;  border-right:     .5pt solid silver  ;
+           font-family: Arial            ;
+          }
+
+          .tpled2
+          {
+           font-style:  regular          ;  border-top:       .5pt solid black   ;  background: none    ;
+           font-weight: bold             ;  border-bottom:    .5pt solid black   ;
+           text-align:  left             ;  border-left:      .5pt solid black   ;
+           color:       black            ;  border-right:     .5pt solid black   ;
+           font-family: Arial            ;
+          }
+
+         .tpled3
+         {
+          font-style:  regular          ;  border-top:       .5pt solid black   ;  background: none    ;
+          font-weight: regular          ;  border-bottom:    .5pt solid black   ;
+          text-align:  center           ;  border-left:      .5pt solid black   ;
+          color:       red              ;  border-right:     .5pt solid black   ;
+          font-family: Arial            ;
+         }
+
+         .tpled4
+         {
+          font-style:  regular          ;  border-top:       .5pt solid silver  ;  background: none    ;
+          font-weight: regular          ;  border-bottom:    .5pt solid silver  ;
+          text-align:  center           ;  border-left:      .5pt solid silver  ;
+          color:       black            ;  border-right:     .5pt solid silver  ;
+          font-family: Arial            ;
+         }
+       </STYLE>
+
+  </HEAD>
+
+
+  <BODY>
+      <TABLE x:str >
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 250'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+          <COL style ='width: 120'>
+
+
+          <TR>
+
+             <TD rowspan=6 colspan=6     class=tpled3>       </TD>
+
+             <TD colspan=2 class=tpled2 >                </TD>
+             <TD colspan=2 class=tpled2 > SHIPPER NUMBER </TD>
+             <TD colspan=2 class=tpled2 >                </TD>
+             <TD           class=tpled2 > OF             </TD>
+             <TD           class=tpled2 >                </TD>
+          </TR>
+
+
+
+
+
+
+
+         <TR>
+            <TD colspan=2 class=tpled2       >  JOB NUMBER           </TD>
+            <TD colspan=2 class=tpled2 x:num >  403184               </TD>
+            <TD colspan=2 class=tpled2       >  ISSUE DATE           </TD>
+            <TD colspan=2 class=tpled2       >                       </TD>
+         </TR>
+
+
+
+
+
+
+
+
+          <TR>
+             <TD  colspan=2 class=tpled2      > BUILDING NUMBER </TD>
+             <TD  colspan=2 class=tpled2      > 403184_MARK_V_Corporation_B*** </TD>
+             <TD  colspan=2 class=tpled2      > REVISION NUMBER </TD>
+             <TD  colspan=2 class=tpled2      >                 </TD>
+          </TR>
+
+
+
+
+
+           <TR>
+              <TD colspan= 2 class=tpled2  >  DRAWN BY       </TD>
+              <TD colspan= 2 class=tpled2  >                 </TD>
+              <TD colspan= 2 class=tpled2  >  REVISION BY    </TD>
+              <TD colspan= 2 class=tpled2  >                 </TD>
+           </TR>
+
+
+          <TR>
+             <TD colspan= 2 class=tpled2  >  CHECKED BY     </TD>
+             <TD colspan= 2 class=tpled2  >                 </TD>
+             <TD colspan= 2 class=tpled2  >  REVISION DATE  </TD>
+             <TD colspan= 2 class=tpled2  >                 </TD>
+          </TR>
+
+
+         <TR>
+             <TD colspan=2  class=tpled2 >  BLDG DESCRIP.                                              </TD>
+             <TD colspan=6  class=tpled2 >  MARK V CORPORATION                                         </TD>
+          </TR>
+
+
+
+            <TR>
+               <TD colspan=2  class=tpled2      >  CUSTOMER:                      </TD>
+               <TD colspan=12 class=tpled2      >  Araz Razzaghy                  </TD>
+            </TR>
+
+
+
+           <TR>
+              <TD colspan=14 class=tpled1      > EAVE STRUTS                     </TD>
+           </TR>
+
+
+
+          <TR>
+             <TD            class=tpled1      >  QTY            </TD>
+
+
+             <TD            class=tpled1      >  MARK           </TD>
+             <TD colspan=2  class=tpled1      >  DESCRIPTION    </TD>
+
+             <TD            class=tpled1      >  PITCH          </TD>
+             <TD            class=tpled1      >  PART           </TD>
+             <TD            class=tpled1      >  PUNCH          </TD>
+             <TD colspan=2  class=tpled1      >  COLOR          </TD>
+             <TD            class=tpled1      >  DWG #          </TD>
+             <TD colspan=2  class=tpled1      >  LENGTH         </TD>
+             <TD colspan=2  class=tpled1      >  WT.            </TD>
+
+          </TR>
+
+          <TR>
+
+          </TR>
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140ET1                 </TD>
+                <TD colspan=2 class=tpled4       >  EAVE_STRUT                        </TD>
+                <TD           class=tpled4       >  3.00 : 12                         </TD>
+                <TD           class=tpled4       >  L1225E14               </TD>
+                <TD           class=tpled4       >  N-R                    </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4 x:num >  27'-5 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  157.75                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > IFlg=3 326.5                                                                                                                                            </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140ET2                 </TD>
+                <TD colspan=2 class=tpled4       >  EAVE_STRUT                        </TD>
+                <TD           class=tpled4       >  3.00 : 12                         </TD>
+                <TD           class=tpled4       >  L1225E14               </TD>
+                <TD           class=tpled4       >  R-N                    </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4 x:num >  27'-5 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  157.75                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > IFlg=3 326.5                                                                                                                                            </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140ET3                 </TD>
+                <TD colspan=2 class=tpled4       >  EAVE_STRUT                        </TD>
+                <TD           class=tpled4       >  3.00 : 12                         </TD>
+                <TD           class=tpled4       >  L1225E14               </TD>
+                <TD           class=tpled4       >  ??-N                   </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4 x:num >  27'-5 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  157.75                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > IFlg=3 10.75 13.25 326.5                                                                                                                                </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <TR>
+                <TD           class=tpled4 x:num >  1                      </TD>
+
+                <TD           class=tpled4       >  140ET4                 </TD>
+                <TD colspan=2 class=tpled4       >  EAVE_STRUT                        </TD>
+                <TD           class=tpled4       >  3.00 : 12                         </TD>
+                <TD           class=tpled4       >  L1225E14               </TD>
+                <TD           class=tpled4       >  N-??                   </TD>
+                <TD colspan=2 class=tpled4       >  Pre-Galvanized         </TD>
+
+                <TD           class=tpled4       >                         </TD>
+                <TD colspan=2 class=tpled4 x:num >  27'-5 1/2"             </TD>
+                <TD colspan=2 class=tpled4 x:num >  157.75                 </TD>
+
+            </TR>
+
+
+
+
+
+
+
+
+
+  <TR>
+   <TD colspan=14   class=tpled4 x:num > IFlg=3 316.25 318.75 326.5                                                                                                                              </TD>
+
+ </TR>
+
+
+
+
+
+
+
+
+
+
+
+
+                  <TR>
+                  </TR>
+
+                  <TR>
+                      <TD colspan= 10 class=tpled1     >                                 </TD>
+                      <TD colspan=2  class=tpled2      >  PAGE WEIGHT                    </TD>
+                      <TD colspan=2  class=tpled1      > 631.00                          </TD>
+                   </TR>
+
+                </TABLE>
+
+            </BODY>
+         </HTML>
